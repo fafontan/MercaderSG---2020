@@ -30,7 +30,8 @@ namespace DatosC
                     int Activo = Conversions.ToInteger(CmdActivo.ExecuteScalar());
                     if (Activo > 0)
                     {
-                        throw new WarningException(Datos.My.Resources.ArchivoIdioma.NotaPedidoDadaBaja);
+                        throw new WarningException(My.Resources.ArchivoIdioma.NotaPedidoDadaBaja);
+                        //throw new WarningException(Datos.My.Resources.ArchivoIdioma.NotaPedidoDadaBaja);
                     }
                     else
                     {
@@ -42,7 +43,8 @@ namespace DatosC
                 }
                 else
                 {
-                    throw new WarningException(Datos.My.Resources.ArchivoIdioma.NotaPedidoNoExiste);
+                    throw new WarningException(My.Resources.ArchivoIdioma.NotaPedidoNoExiste);
+                    //throw new WarningException(Datos.My.Resources.ArchivoIdioma.NotaPedidoNoExiste);
                 }
             }
         }
@@ -128,7 +130,7 @@ namespace DatosC
                 Cmd.Parameters.AddWithValue("@CodProv", NotaPedido.CodProv);
                 NotaPedido.CodNot = Conversions.ToInteger(Cmd.ExecuteScalar());
                 foreach (DetalleEN item in NotaPedido.Detalle)
-                    Datos.NegocioAD.AltaLineaDetalle(NotaPedido.CodNot, item, "Detalle_NotaPedido");
+                    DatosC.NegocioAD.AltaLineaDetalle(NotaPedido.CodNot, item, "Detalle_NotaPedido");
             }
         }
 
@@ -144,7 +146,8 @@ namespace DatosC
                 int Activo = Conversions.ToInteger(CmdActivo.ExecuteScalar());
                 if (Activo > 0)
                 {
-                    throw new WarningException(Datos.My.Resources.ArchivoIdioma.NotaPedidoDadaBaja);
+                    throw new WarningException(My.Resources.ArchivoIdioma.NotaPedidoDadaBaja);
+                    //throw new WarningException(Datos.My.Resources.ArchivoIdioma.NotaPedidoDadaBaja);
                 }
                 else
                 {
@@ -169,7 +172,8 @@ namespace DatosC
                 int Activo = Conversions.ToInteger(CmdActivo.ExecuteScalar());
                 if (Activo > 0)
                 {
-                    throw new WarningException(Datos.My.Resources.ArchivoIdioma.NotaPedidoDadaBaja);
+                    throw new WarningException(My.Resources.ArchivoIdioma.NotaPedidoDadaBaja);
+                    //throw new WarningException(Datos.My.Resources.ArchivoIdioma.NotaPedidoDadaBaja);
                 }
                 else
                 {

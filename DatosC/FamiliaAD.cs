@@ -41,7 +41,8 @@ namespace DatosC
                 }
                 else
                 {
-                    throw new WarningException(Datos.My.Resources.ArchivoIdioma.FamiliaDadaBaja);
+                    //throw new WarningException(Datos.My.Resources.ArchivoIdioma.FamiliaDadaBaja);
+                    throw new WarningException(My.Resources.ArchivoIdioma.FamiliaDadaBaja);
                 }
             }
         }
@@ -65,7 +66,8 @@ namespace DatosC
                 }
                 else
                 {
-                    throw new WarningException(Datos.My.Resources.ArchivoIdioma.FamiliaDadaBaja);
+                    throw new WarningException(My.Resources.ArchivoIdioma.FamiliaDadaBaja);
+                    //throw new WarningException(Datos.My.Resources.ArchivoIdioma.FamiliaDadaBaja);
                 }
             }
         }
@@ -132,7 +134,8 @@ namespace DatosC
                 }
                 else
                 {
-                    throw new WarningException(Datos.My.Resources.ArchivoIdioma.FamiliaDadaBaja);
+                    throw new WarningException(My.Resources.ArchivoIdioma.FamiliaDadaBaja);
+                    //throw new WarningException(Datos.My.Resources.ArchivoIdioma.FamiliaDadaBaja);
                 }
             }
         }
@@ -159,7 +162,8 @@ namespace DatosC
                 }
                 else
                 {
-                    throw new WarningException(Datos.My.Resources.ArchivoIdioma.FamiliaDadaBaja);
+                    throw new WarningException(My.Resources.ArchivoIdioma.FamiliaDadaBaja);
+                   // throw new WarningException(Datos.My.Resources.ArchivoIdioma.FamiliaDadaBaja);
                 }
             }
 
@@ -226,7 +230,8 @@ namespace DatosC
                 }
                 else
                 {
-                    throw new WarningException(Datos.My.Resources.ArchivoIdioma.FamiliaDadaBaja);
+                    //throw new WarningException(Datos.My.Resources.ArchivoIdioma.FamiliaDadaBaja);
+                    throw new WarningException(My.Resources.ArchivoIdioma.FamiliaDadaBaja);
                 }
             }
         }

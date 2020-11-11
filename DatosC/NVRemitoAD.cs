@@ -73,7 +73,7 @@ namespace DatosC
                 }
 
                 foreach (DetalleEN Detalle in ListaDetalleNV)
-                    Datos.NegocioAD.AltaLineaDetalle(RENV.CodRemito, Detalle);
+                    DatosC.NegocioAD.AltaLineaDetalle(RENV.CodRemito, Detalle);
             }
         }
 
