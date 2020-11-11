@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AltaCliente" xml:space="preserve">
+    <value>El alta del cliente se realizo correctamente</value>
+  </data>
+  <data name="AltaLocalidad" xml:space="preserve">
+    <value>El alta de la localidad se realizo correctamente</value>
+  </data>
+  <data name="AltaUsuario" xml:space="preserve">
+    <value>El alta del usuario se realizo correctamente</value>
+  </data>
+  <data name="BajaCliente" xml:space="preserve">
+    <value>La baja del cliente se realizo correctamente</value>
+  </data>
+  <data name="BajaUsuario" xml:space="preserve">
+    <value>La baja del usuario se realizo correctamente</value>
+  </data>
+  <data name="ClienteExistente" xml:space="preserve">
+    <value>El cliente que desea dar de alta ya existe</value>
+  </data>
+  <data name="CMBCuit" xml:space="preserve">
+    <value>CUIT</value>
+  </data>
+  <data name="CMBUsuario" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="LocalidadExistente" xml:space="preserve">
+    <value>La localidad que desea dar de alta ya existe</value>
+  </data>
+  <data name="ModificarCliente" xml:space="preserve">
+    <value>Los datos del cliente se actualizaron correctamente</value>
+  </data>
+  <data name="ModificarUsuario" xml:space="preserve">
+    <value>Los datos del usuario se actualizaron correctamente</value>
+  </data>
+  <data name="UsuarioBloqueado" xml:space="preserve">
+    <value>El usuario ha sido bloqueado por el sistema. Contacte con el usuario correspondiente para desbloquear el usuario</value>
+  </data>
+  <data name="UsuarioExistente" xml:space="preserve">
+    <value>El usuario que desea dar de alta ya existe</value>
+  </data>
+  <data name="FamiliaExistente" xml:space="preserve">
+    <value>La familia que desea dar de alta ya existe</value>
+  </data>
+  <data name="AltaFamilia" xml:space="preserve">
+    <value>El alta de la familia se realizo correctamente</value>
+  </data>
+  <data name="ModificarFamilia" xml:space="preserve">
+    <value>Los datos de la familia se actualizaron correctamente</value>
+  </data>
+  <data name="BajaFamilia" xml:space="preserve">
+    <value>La baja de la familia se realizo correctamente</value>
+  </data>
+  <data name="UsuarioInexistente" xml:space="preserve">
+    <value>El usuario no existe</value>
+  </data>
+  <data name="DesbloquearUsuario" xml:space="preserve">
+    <value>El usuario ha sido desbloqueado correctamente</value>
+  </data>
+  <data name="AltaProducto" xml:space="preserve">
+    <value>El alta del producto se realizo correctamente</value>
+  </data>
+  <data name="ProductoExistente" xml:space="preserve">
+    <value>El producto que desea dar de alta ya existe</value>
+  </data>
+  <data name="AltaPrecio" xml:space="preserve">
+    <value>El precio del producto se actualizo correctamente</value>
+  </data>
+  <data name="AltaStock" xml:space="preserve">
+    <value>El stock del producto ha sido actualizado correctamente</value>
+  </data>
+  <data name="BajaProducto" xml:space="preserve">
+    <value>La baja del producto se realizo correctamente</value>
+  </data>
+  <data name="ModificarProducto" xml:space="preserve">
+    <value>Los datos del producto se actualizaron correctamente</value>
+  </data>
+  <data name="CMBNombre" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="AltaNotaVenta" xml:space="preserve">
+    <value>La nota de venta fue creada satisfactoriamente</value>
+  </data>
+  <data name="NotaVentaNoExiste" xml:space="preserve">
+    <value>La nota de venta no existe</value>
+  </data>
+  <data name="BajaNotaVenta" xml:space="preserve">
+    <value>La baja de la nota de venta se realizo correctamente</value>
+  </data>
+  <data name="ProveedorExistente" xml:space="preserve">
+    <value>El proveedor que desea dar de alta ya existe</value>
+  </data>
+  <data name="AltaProveedor" xml:space="preserve">
+    <value>El alta del proveedor se realizo correctamente</value>
+  </data>
+  <data name="BajaProveedor" xml:space="preserve">
+    <value>La baja del proveedor se realizo correctamente</value>
+  </data>
+  <data name="ModificarProveedor" xml:space="preserve">
+    <value>Los datos del proveedor se actualizaron correctamente</value>
+  </data>
+  <data name="EliminarTelefono" xml:space="preserve">
+    <value>El número de teléfono se elimino correctamente</value>
+  </data>
+  <data name="AltaNotaPedido" xml:space="preserve">
+    <value>La nota de pedido fue creada satisfactoriamente</value>
+  </data>
+  <data name="RemitoNVExiste" xml:space="preserve">
+    <value>Esta nota de venta ya posee un remito generado</value>
+  </data>
+  <data name="RemitoNVGenerado" xml:space="preserve">
+    <value>El remito ha sido generado correctamente</value>
+  </data>
+  <data name="ResetContrasena" xml:space="preserve">
+    <value>La contraseña ha sido cambiada correctamente</value>
+  </data>
+  <data name="RemitoNoExiste" xml:space="preserve">
+    <value>No existe un remito para esa nota de venta</value>
+  </data>
+  <data name="PrivilegiosUsuario" xml:space="preserve">
+    <value>No se puede dar de baja el usuario. CAUSA: U.U.C.C.P</value>
+  </data>
+  <data name="NotaPedidoNoExiste" xml:space="preserve">
+    <value>La nota de pedido no existe</value>
+  </data>
+  <data name="FamiliaInexistente" xml:space="preserve">
+    <value>La familia no existe</value>
+  </data>
+  <data name="PrivilegiosFamilia" xml:space="preserve">
+    <value>No se puede eliminar la familia.
+CAUSA: U.F.C.C.P</value>
+  </data>
+  <data name="UsuarioRevision" xml:space="preserve">
+    <value>El usuario no puede ser bloqueado. CAUSA: U.U.C.C.P</value>
+  </data>
+  <data name="ContraseñaCambiada" xml:space="preserve">
+    <value>La contraseña fue cambiada correctamente</value>
+  </data>
+  <data name="ContraseñaInvalida" xml:space="preserve">
+    <value>La contraseña es invalida</value>
+  </data>
+  <data name="UsuarioDadoBaja" xml:space="preserve">
+    <value>El usuario esta dado de baja</value>
+  </data>
+  <data name="DepurarBitacora" xml:space="preserve">
+    <value>Se depuró correctamente la Bitácora</value>
+  </data>
+</root>

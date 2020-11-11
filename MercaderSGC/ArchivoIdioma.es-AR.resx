@@ -1,0 +1,1771 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BusquedaNumero" xml:space="preserve">
+    <value>Este campo no puede contener números</value>
+  </data>
+  <data name="BusquedaVacia" xml:space="preserve">
+    <value>Este campo no puede estar vacío</value>
+  </data>
+  <data name="CampoObligatorio" xml:space="preserve">
+    <value>Este campo es obligatorio</value>
+  </data>
+  <data name="Contener12Carac" xml:space="preserve">
+    <value>El campo no puede contener más de 12 caracteres</value>
+  </data>
+  <data name="Contener20Carac" xml:space="preserve">
+    <value>El campo no puede contener más de 20 caracteres</value>
+  </data>
+  <data name="Contener25Num" xml:space="preserve">
+    <value>El campo no puede contener más de 25 caracteres</value>
+  </data>
+  <data name="Contener50Carac" xml:space="preserve">
+    <value>El campo no puede contener más de 50 caracteres</value>
+  </data>
+  <data name="ContenerMenos6Carac" xml:space="preserve">
+    <value>El campo no puede contener menos de 6 caracteres</value>
+  </data>
+  <data name="ContenerMenos8Carac" xml:space="preserve">
+    <value>El campo no puede contener menos de 8 caracteres</value>
+  </data>
+  <data name="ContraseñaNoCoinciden" xml:space="preserve">
+    <value>Las contraseñas no coinciden</value>
+  </data>
+  <data name="EliminarNumeroTel" xml:space="preserve">
+    <value>¿Desea eliminar el número de teléfono: </value>
+  </data>
+  <data name="EliminarUsuario" xml:space="preserve">
+    <value>¿Desea dar de baja al usuario: </value>
+  </data>
+  <data name="ModificarUsuario" xml:space="preserve">
+    <value>¿Desea modificar los datos del usuario: </value>
+  </data>
+  <data name="MsgBoxAdvertencia" xml:space="preserve">
+    <value>Mensaje de Advertencia</value>
+  </data>
+  <data name="MsgBoxCritico" xml:space="preserve">
+    <value>Mensaje Crítico</value>
+  </data>
+  <data name="MsgBoxEliminarUsuario" xml:space="preserve">
+    <value>Eliminar Usuario</value>
+  </data>
+  <data name="MsgBoxInformacion" xml:space="preserve">
+    <value>Mensaje de Información</value>
+  </data>
+  <data name="MsgBoxModificarUsuario" xml:space="preserve">
+    <value>Modificar Usuario</value>
+  </data>
+  <data name="MsgEliminarNumeroTel" xml:space="preserve">
+    <value>Eliminar número de teléfono</value>
+  </data>
+  <data name="NoExisteUsuBusqueda" xml:space="preserve">
+    <value>No existen usuarios para su búsqueda.</value>
+  </data>
+  <data name="NoTelefonoDG" xml:space="preserve">
+    <value>No hay ningún teléfono cargado</value>
+  </data>
+  <data name="NoTelSeleccionado" xml:space="preserve">
+    <value>Debe seleccionar un teléfono</value>
+  </data>
+  <data name="Pregunta" xml:space="preserve">
+    <value>?</value>
+  </data>
+  <data name="UsuarioExistente" xml:space="preserve">
+    <value>El usuario que desea dar de alta ya existe</value>
+  </data>
+  <data name="ContraseñaIncorrecta" xml:space="preserve">
+    <value>La contraseña ingresada es incorrecta</value>
+  </data>
+  <data name="AltaUsuarioForm" xml:space="preserve">
+    <value>Nuevo Usuario - MercaderSG</value>
+  </data>
+  <data name="EliminarTelFrm" xml:space="preserve">
+    <value>Eliminar número de teléfono - MercaderSG</value>
+  </data>
+  <data name="GestionUsuarioForm" xml:space="preserve">
+    <value>Gestión de Usuarios - MercaderSG</value>
+  </data>
+  <data name="IniciarSesionForm" xml:space="preserve">
+    <value>Iniciar Sesión - MercaderSG</value>
+  </data>
+  <data name="ModificarUsuarioForm" xml:space="preserve">
+    <value>Modificar Usuario - MercaderSG</value>
+  </data>
+  <data name="PrincipalForm" xml:space="preserve">
+    <value>Principal - MercaderSG</value>
+  </data>
+  <data name="FormulariosAbiertos" xml:space="preserve">
+    <value>Para salir de la aplicación, debe cerrar todos los formularios abiertos</value>
+  </data>
+  <data name="TituloGestionUsuario" xml:space="preserve">
+    <value>Gestión de usuarios</value>
+  </data>
+  <data name="IngreseNumero" xml:space="preserve">
+    <value>Ingrese un número</value>
+  </data>
+  <data name="CMBApellido" xml:space="preserve">
+    <value>Apellido</value>
+  </data>
+  <data name="CMBNombre" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="CMBUsuario" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="CampoVacio" xml:space="preserve">
+    <value>Este campo no puede estar vacío</value>
+  </data>
+  <data name="CincoTelMax" xml:space="preserve">
+    <value>No puede ingresar más de cinco números teléfonicos</value>
+  </data>
+  <data name="DGGestionUsuarioApellidoCAB" xml:space="preserve">
+    <value>Apellido</value>
+  </data>
+  <data name="DGGestionUsuarioCodigoCAB" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="DGGestionUsuarioEdadCAB" xml:space="preserve">
+    <value>Edad</value>
+  </data>
+  <data name="DGGestionUsuarioNombreCAB" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="DGGestionUsuarioUsuarioCAB" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="DGModificarUsuarioNumeroCAB" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="DGModificarUsuarioTelCAB" xml:space="preserve">
+    <value>C.Teléfono</value>
+  </data>
+  <data name="DGModificarUsuarioUsuarioCAB" xml:space="preserve">
+    <value>C.Usuario</value>
+  </data>
+  <data name="CambiarIdioma" xml:space="preserve">
+    <value>Cambiar Idioma</value>
+  </data>
+  <data name="CambiarIdiomaESP" xml:space="preserve">
+    <value>¿Desea actualizar el sistema al idioma Español?</value>
+  </data>
+  <data name="CambiarIdiomaUS" xml:space="preserve">
+    <value>¿Desea actualizar el sistema al idioma Inglés?</value>
+  </data>
+  <data name="CMBCuit" xml:space="preserve">
+    <value>CUIT</value>
+  </data>
+  <data name="BusquedaLetras" xml:space="preserve">
+    <value>Este campo contiene caracteres no permitidos</value>
+  </data>
+  <data name="Contener10Carac" xml:space="preserve">
+    <value>El campo no puede contener más de 10 caracteres</value>
+  </data>
+  <data name="AgregarMin3Tel" xml:space="preserve">
+    <value>Debe agregar al menos tres números de teléfonos</value>
+  </data>
+  <data name="Contener5Carac" xml:space="preserve">
+    <value>El campo no puede contener más de 5 caracteres</value>
+  </data>
+  <data name="AltaClienteFrm" xml:space="preserve">
+    <value>Nuevo Cliente - MercaderSG</value>
+  </data>
+  <data name="GestionClienteFrm" xml:space="preserve">
+    <value>Gestión de Clientes - MercaderSG</value>
+  </data>
+  <data name="ModificarClienteFrm" xml:space="preserve">
+    <value>Modificar Cliente - MercaderSG</value>
+  </data>
+  <data name="EliminarCliente" xml:space="preserve">
+    <value>¿Desea dar de baja al cliente: </value>
+  </data>
+  <data name="MsgBoxEliminarCliente" xml:space="preserve">
+    <value>Baja de cliente</value>
+  </data>
+  <data name="NoExisteCliBusqueda" xml:space="preserve">
+    <value>No existen clientes para su búsqueda</value>
+  </data>
+  <data name="ContenerMenos10Carac" xml:space="preserve">
+    <value>El campo no puede contener menos de 10 caracteres</value>
+  </data>
+  <data name="FormatoCUIT" xml:space="preserve">
+    <value>El formato del CUIT es incorrecto. Formato: 30 o 33-56473857-1</value>
+  </data>
+  <data name="ModificarCliente" xml:space="preserve">
+    <value>¿Desea modificar los datos del cliente: </value>
+  </data>
+  <data name="MsgBoxModificarCliente" xml:space="preserve">
+    <value>Modificar Cliente</value>
+  </data>
+  <data name="Backup" xml:space="preserve">
+    <value>Copia de Seguridad</value>
+  </data>
+  <data name="BackupGenerado" xml:space="preserve">
+    <value>La copia de seguridad se realizo correctamente</value>
+  </data>
+  <data name="FileNameBitacoraPdfXls" xml:space="preserve">
+    <value>ReporteBitacora</value>
+  </data>
+  <data name="FileNameClientePdfXls" xml:space="preserve">
+    <value>ReporteClientes</value>
+  </data>
+  <data name="InfoPaginaDe" xml:space="preserve">
+    <value>de</value>
+  </data>
+  <data name="InfoPaginaPag" xml:space="preserve">
+    <value>Página</value>
+  </data>
+  <data name="InfoPaginaReg" xml:space="preserve">
+    <value>|| Registros:</value>
+  </data>
+  <data name="NoRegExportar" xml:space="preserve">
+    <value>La grilla esta vacia. Debe existir al menos un registro</value>
+  </data>
+  <data name="TituloBitacoraPdf" xml:space="preserve">
+    <value>Bitácora - MercaderSG</value>
+  </data>
+  <data name="TituloClientePdf" xml:space="preserve">
+    <value>Clientes - MercaderSG</value>
+  </data>
+  <data name="TTAnteriorBtn" xml:space="preserve">
+    <value>Página Anterior</value>
+  </data>
+  <data name="TTClienteAltaBtn" xml:space="preserve">
+    <value>Permite crear un nuevo cliente</value>
+  </data>
+  <data name="TTBuscarBtn" xml:space="preserve">
+    <value>Buscar datos aplicando un filtro</value>
+  </data>
+  <data name="TTClienteEliminarBtn" xml:space="preserve">
+    <value>Permite dar de baja un cliente</value>
+  </data>
+  <data name="TTEliminarTelBtn" xml:space="preserve">
+    <value>Permite eliminar un número de teléfono</value>
+  </data>
+  <data name="TTClienteModificarBtn" xml:space="preserve">
+    <value>Permite modificar los datos de un cliente</value>
+  </data>
+  <data name="TTPrimeraBtn" xml:space="preserve">
+    <value>Primera Página</value>
+  </data>
+  <data name="TTSiguienteBtn" xml:space="preserve">
+    <value>Página Siguiente</value>
+  </data>
+  <data name="TTUltimoBtn" xml:space="preserve">
+    <value>Ultima Página</value>
+  </data>
+  <data name="EliminarMenosTresTelCli" xml:space="preserve">
+    <value>El cliente no puede tener menos de tres números telefonicos</value>
+  </data>
+  <data name="FileNameUsuarioPdfXls" xml:space="preserve">
+    <value>ReporteUsuarios</value>
+  </data>
+  <data name="TituloUsuarioPdf" xml:space="preserve">
+    <value>Usuarios - MercaderSG</value>
+  </data>
+  <data name="FileNameTxtUsu" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="TxtContraseña" xml:space="preserve">
+    <value>Contraseña: </value>
+  </data>
+  <data name="TxtUsuario" xml:space="preserve">
+    <value>Usuario: </value>
+  </data>
+  <data name="ModificarFamilia" xml:space="preserve">
+    <value>¿Desea modificar la familia: </value>
+  </data>
+  <data name="MsgBoxModificarFamilia" xml:space="preserve">
+    <value>Modificar Familia</value>
+  </data>
+  <data name="EliminarFamilia" xml:space="preserve">
+    <value>¿Desea eliminar la familia: </value>
+  </data>
+  <data name="MsgBoxEliminarFamilia" xml:space="preserve">
+    <value>Eliminar Familia</value>
+  </data>
+  <data name="NoTienePatente1" xml:space="preserve">
+    <value>Se eliminaron la/s patente/s de la familia: </value>
+  </data>
+  <data name="NoTieneFamilia1" xml:space="preserve">
+    <value>El usuario: </value>
+  </data>
+  <data name="NoTieneFamilia2" xml:space="preserve">
+    <value> ya posee la/s familia/s:</value>
+  </data>
+  <data name="TTCancelarBtn" xml:space="preserve">
+    <value>Salir</value>
+  </data>
+  <data name="TTUsuPatAceptarBtn" xml:space="preserve">
+    <value>Alta de Patente/s</value>
+  </data>
+  <data name="TTUsuPatListaPatentes" xml:space="preserve">
+    <value>Lista de patentes disponibles para el usuario: </value>
+  </data>
+  <data name="TTUsuPatValidar" xml:space="preserve">
+    <value>Permite cargar patentes disponibles para el usuario</value>
+  </data>
+  <data name="NoPatSel" xml:space="preserve">
+    <value>Debe seleccionar al menos una patente</value>
+  </data>
+  <data name="AltaPatenteLista" xml:space="preserve">
+    <value>Alta de patentes: </value>
+  </data>
+  <data name="CMBRazonSocial" xml:space="preserve">
+    <value>Razón Social</value>
+  </data>
+  <data name="DenegarPatOk" xml:space="preserve">
+    <value>Se denegaron la/s patente/s: </value>
+  </data>
+  <data name="NoTienePatUsu" xml:space="preserve">
+    <value>El usuario no posee patentes asignadas</value>
+  </data>
+  <data name="PatOk" xml:space="preserve">
+    <value>Alta de patente/s para el usuario: </value>
+  </data>
+  <data name="TTDenUsuPatAceptarBtn" xml:space="preserve">
+    <value>Denegar la/s patente/s</value>
+  </data>
+  <data name="TTDenUsuPatValidar" xml:space="preserve">
+    <value>Permite cargar las patentes que ya posee el usuario</value>
+  </data>
+  <data name="TTDenUsuPatListaPatentes" xml:space="preserve">
+    <value>Lista de patentes posibles a denegar que posee el usuario: </value>
+  </data>
+  <data name="UsuConObligatorios" xml:space="preserve">
+    <value>Usuario y Contraseña son requeridos</value>
+  </data>
+  <data name="CMBSector" xml:space="preserve">
+    <value>Sector</value>
+  </data>
+  <data name="NoCoincidenPass" xml:space="preserve">
+    <value>Las contraseñas no coinciden</value>
+  </data>
+  <data name="EliminarProducto" xml:space="preserve">
+    <value>¿Desea dar de baja al producto: </value>
+  </data>
+  <data name="MsgBoxEliminarProducto" xml:space="preserve">
+    <value>Baja Producto</value>
+  </data>
+  <data name="NoExisteProdBusqueda" xml:space="preserve">
+    <value>No existen productos para su búsqueda</value>
+  </data>
+  <data name="NoExisteEventosBusqueda" xml:space="preserve">
+    <value>No existen eventos para su búsqueda</value>
+  </data>
+  <data name="AltaFamPat" xml:space="preserve">
+    <value>Alta de patente/s para la familia </value>
+  </data>
+  <data name="AltaUsuFam" xml:space="preserve">
+    <value>Alta de familia/s para el usuario </value>
+  </data>
+  <data name="NoFamSel" xml:space="preserve">
+    <value>Debe seleccionar al menos una familia</value>
+  </data>
+  <data name="ImprimirNotaVenta" xml:space="preserve">
+    <value>¿Desea imprimir la nota de venta</value>
+  </data>
+  <data name="NoIngresarMismoProducto" xml:space="preserve">
+    <value>No puede ingresar el mismo producto</value>
+  </data>
+  <data name="NoStock" xml:space="preserve">
+    <value>No hay suficiente stock para este producto</value>
+  </data>
+  <data name="ProveedorExistente" xml:space="preserve">
+    <value>El proveedor que desea dar de alta ya existe</value>
+  </data>
+  <data name="ModificarProveedor" xml:space="preserve">
+    <value>¿Desea modificar los datos del proveedor: </value>
+  </data>
+  <data name="MsgBoxModificarProveedor" xml:space="preserve">
+    <value>Modificar Proveedor</value>
+  </data>
+  <data name="NoExisteProvBusqueda" xml:space="preserve">
+    <value>No existen proveedores para su búsqueda</value>
+  </data>
+  <data name="TTListaClientes" xml:space="preserve">
+    <value>Lista de Clientes</value>
+  </data>
+  <data name="TTRecargarBtn" xml:space="preserve">
+    <value>Recargar Lista</value>
+  </data>
+  <data name="EliminarProveedor" xml:space="preserve">
+    <value>¿Desea dar de baja al proveedor: </value>
+  </data>
+  <data name="MsgBoxEliminarProveedor" xml:space="preserve">
+    <value>Baja Proveedor</value>
+  </data>
+  <data name="EliminarMenosTresTelProv" xml:space="preserve">
+    <value>El proveedor no puede tener menos de tres números telefonicos</value>
+  </data>
+  <data name="EliminarMenosTresTelUsu" xml:space="preserve">
+    <value>El usuariono puede tener menos de tres números telefonicos</value>
+  </data>
+  <data name="Cantidad" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="Detalle" xml:space="preserve">
+    <value>Detalle</value>
+  </data>
+  <data name="Precio" xml:space="preserve">
+    <value>Precio</value>
+  </data>
+  <data name="NoExisteNVBusqueda" xml:space="preserve">
+    <value>No existen nota de ventas para su búsqueda</value>
+  </data>
+  <data name="NoUsuBloqueados" xml:space="preserve">
+    <value>No hay usuarios bloqueados</value>
+  </data>
+  <data name="TTAceptarLogin" xml:space="preserve">
+    <value>Ingresar al sistema</value>
+  </data>
+  <data name="TTContrasenaLoginTxt" xml:space="preserve">
+    <value>Contraseña del usuario para ingresar al sistema</value>
+  </data>
+  <data name="TTUsuarioLoginTxt" xml:space="preserve">
+    <value>Usuario para ingresar al sistema</value>
+  </data>
+  <data name="AceptarBtn" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <data name="CancelarBtn" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="ContrasenaLbl" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="UsuarioLbl" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="BackupPfrm" xml:space="preserve">
+    <value>Copia de Seguridad - BD</value>
+  </data>
+  <data name="BitacoraPfrm" xml:space="preserve">
+    <value>Bitácora</value>
+  </data>
+  <data name="CambiarPassPfrm" xml:space="preserve">
+    <value>Cambiar Contraseña</value>
+  </data>
+  <data name="ClientePFrm" xml:space="preserve">
+    <value>Clientes</value>
+  </data>
+  <data name="ComercialPFrm" xml:space="preserve">
+    <value>Comercial</value>
+  </data>
+  <data name="DesbloquearPfrm" xml:space="preserve">
+    <value>Desbloquear Usuario</value>
+  </data>
+  <data name="EspanolPfrm" xml:space="preserve">
+    <value>es-AR</value>
+  </data>
+  <data name="GenerarNotasPFrm" xml:space="preserve">
+    <value>Generar</value>
+  </data>
+  <data name="GestionFamPfrm" xml:space="preserve">
+    <value>Gestión de Familias</value>
+  </data>
+  <data name="GestionPFrm" xml:space="preserve">
+    <value>Gestión</value>
+  </data>
+  <data name="GestionUsuPfrm" xml:space="preserve">
+    <value>Gestión de Usuarios</value>
+  </data>
+  <data name="IdiomaPfrm" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="InglesPfrm" xml:space="preserve">
+    <value>en-US</value>
+  </data>
+  <data name="NPPFrm" xml:space="preserve">
+    <value>Nota de Pedido</value>
+  </data>
+  <data name="NVPfrm" xml:space="preserve">
+    <value>Nota de Venta</value>
+  </data>
+  <data name="PanelPfrm" xml:space="preserve">
+    <value>Panel</value>
+  </data>
+  <data name="PatFamPfrm" xml:space="preserve">
+    <value>Patente - Familia</value>
+  </data>
+  <data name="PatUsuPfrm" xml:space="preserve">
+    <value>Patente - Usuario</value>
+  </data>
+  <data name="ProductoPFrm" xml:space="preserve">
+    <value>Productos</value>
+  </data>
+  <data name="ProveedorPFrm" xml:space="preserve">
+    <value>Proveedores</value>
+  </data>
+  <data name="ResetearPfrm" xml:space="preserve">
+    <value>Resetear Contraseña</value>
+  </data>
+  <data name="RestorePfrm" xml:space="preserve">
+    <value>Restaurar - BD</value>
+  </data>
+  <data name="SalirPfrm" xml:space="preserve">
+    <value>Salir</value>
+  </data>
+  <data name="SeguridadPfrm" xml:space="preserve">
+    <value>Seguridad</value>
+  </data>
+  <data name="SistemaPFrm" xml:space="preserve">
+    <value>Sistema</value>
+  </data>
+  <data name="UsuFamPfrm" xml:space="preserve">
+    <value>Usuario - Familia</value>
+  </data>
+  <data name="ElUsuario" xml:space="preserve">
+    <value>El usuario </value>
+  </data>
+  <data name="NoPermisosLogin" xml:space="preserve">
+    <value> no posee permisos</value>
+  </data>
+  <data name="AgregarCliBtn" xml:space="preserve">
+    <value>Nuevo Cliente</value>
+  </data>
+  <data name="BuscarBtn" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="BuscarPorLbl" xml:space="preserve">
+    <value>Buscar por</value>
+  </data>
+  <data name="CodigoCAB" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="CuitGral" xml:space="preserve">
+    <value>CUIT</value>
+  </data>
+  <data name="DireccionCAB" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="EliminarCliBtn" xml:space="preserve">
+    <value>Eliminar Cliente</value>
+  </data>
+  <data name="EliminarTelBtn" xml:space="preserve">
+    <value>Eliminar Teléfono/s</value>
+  </data>
+  <data name="GestionClienteGB" xml:space="preserve">
+    <value>Gestión de Clientes</value>
+  </data>
+  <data name="IgualALbl" xml:space="preserve">
+    <value>igual a</value>
+  </data>
+  <data name="ModificarCliBtn" xml:space="preserve">
+    <value>Modificar Cliente</value>
+  </data>
+  <data name="OperacionesGB" xml:space="preserve">
+    <value>Operaciones</value>
+  </data>
+  <data name="RazonSocialGral" xml:space="preserve">
+    <value>Razón Social</value>
+  </data>
+  <data name="RegistrosGB" xml:space="preserve">
+    <value>Registros</value>
+  </data>
+  <data name="Contener13Carac" xml:space="preserve">
+    <value>El campo no puede contener más de 13 caracteres</value>
+  </data>
+  <data name="CalleLbl" xml:space="preserve">
+    <value>Calle</value>
+  </data>
+  <data name="DatosEmpresa" xml:space="preserve">
+    <value>Datos de la Empresa</value>
+  </data>
+  <data name="DepartamentoLbl" xml:space="preserve">
+    <value>Departamento</value>
+  </data>
+  <data name="DomicilioGB" xml:space="preserve">
+    <value>Domicilio</value>
+  </data>
+  <data name="LocalidadLbl" xml:space="preserve">
+    <value>Localidad</value>
+  </data>
+  <data name="NumeroCalleLbl" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="NumeroTelLbl" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="PisoLbl" xml:space="preserve">
+    <value>Piso</value>
+  </data>
+  <data name="TelefonosGB" xml:space="preserve">
+    <value>Teléfonos</value>
+  </data>
+  <data name="TTAceptarAltaCli" xml:space="preserve">
+    <value>Alta del nuevo Cliente</value>
+  </data>
+  <data name="TTAgregarLocalidad" xml:space="preserve">
+    <value>Agregar nueva localidad</value>
+  </data>
+  <data name="TTAgregarTel" xml:space="preserve">
+    <value>Agregar número teléfonico</value>
+  </data>
+  <data name="TTCalleCli" xml:space="preserve">
+    <value>Calle donde reside el Cliente</value>
+  </data>
+  <data name="TTCuit" xml:space="preserve">
+    <value>Número de CUIT. Formato: 30 o 33-45256356-2</value>
+  </data>
+  <data name="TTDepartemento" xml:space="preserve">
+    <value>Letra/Número del departamento. Opcional</value>
+  </data>
+  <data name="TTListaTel" xml:space="preserve">
+    <value>Lista de números teléfonicos</value>
+  </data>
+  <data name="TTLocalidad" xml:space="preserve">
+    <value>Lista de Localidades</value>
+  </data>
+  <data name="TTNumeroCalleCli" xml:space="preserve">
+    <value>Número de la Calle en la cual reside el Cliente</value>
+  </data>
+  <data name="TTPisoCli" xml:space="preserve">
+    <value>Piso en el que reside el Cliente. Opcional</value>
+  </data>
+  <data name="TTQuitarTel" xml:space="preserve">
+    <value>Quitar número teléfonico</value>
+  </data>
+  <data name="TTRazonSocial" xml:space="preserve">
+    <value>Nombre de la empresa</value>
+  </data>
+  <data name="TTTelefonoCli" xml:space="preserve">
+    <value>Número teléfonico del Cliente</value>
+  </data>
+  <data name="CodTelefono" xml:space="preserve">
+    <value>C.Teléfono</value>
+  </data>
+  <data name="TTAceptarModCli" xml:space="preserve">
+    <value>Modificar Cliente</value>
+  </data>
+  <data name="CodCliTel" xml:space="preserve">
+    <value>C.Cliente</value>
+  </data>
+  <data name="TTAceptarEliTel" xml:space="preserve">
+    <value>Eliminar número de teléfono</value>
+  </data>
+  <data name="AgregarProvBtn" xml:space="preserve">
+    <value>Nuevo Proveedor</value>
+  </data>
+  <data name="CorreoElectronicoGral" xml:space="preserve">
+    <value>Correo Electrónico</value>
+  </data>
+  <data name="EliminarProvBtn" xml:space="preserve">
+    <value>Eliminar Proveedor</value>
+  </data>
+  <data name="GestionProveedorFrm" xml:space="preserve">
+    <value>Gestión de Proveedores - MercaderSG</value>
+  </data>
+  <data name="ModificarProvBtn" xml:space="preserve">
+    <value>Modificar Proveedor</value>
+  </data>
+  <data name="TTListaProveedor" xml:space="preserve">
+    <value>Lista de Proveedores</value>
+  </data>
+  <data name="TTProveedorAltaBtn" xml:space="preserve">
+    <value>Permite crear un nuevo proveedor</value>
+  </data>
+  <data name="TTProveedorEliminarBtn" xml:space="preserve">
+    <value>Permite dar de baja un proveedor</value>
+  </data>
+  <data name="TTProveedorModificarBtn" xml:space="preserve">
+    <value>Permite modificar los datos de un proveedor</value>
+  </data>
+  <data name="TTAceptarAltaProv" xml:space="preserve">
+    <value>Alta de nuevo proveedor</value>
+  </data>
+  <data name="TTCalleProv" xml:space="preserve">
+    <value>Calle donde reside el Proveedor</value>
+  </data>
+  <data name="TTCorreoElectronico" xml:space="preserve">
+    <value>Mail para contacto.</value>
+  </data>
+  <data name="TTNumeroCalleProv" xml:space="preserve">
+    <value>Número de la Calle en la cual reside el Proveedor</value>
+  </data>
+  <data name="TTPisoProv" xml:space="preserve">
+    <value>Piso en el que reside el Proveedor. Opcional</value>
+  </data>
+  <data name="TTTelefonoProv" xml:space="preserve">
+    <value>Número teléfonico del proveedor</value>
+  </data>
+  <data name="AltaProveedorFrm" xml:space="preserve">
+    <value>Nuevo Proveedor - MercaderSG</value>
+  </data>
+  <data name="ModificarProveedorFrm" xml:space="preserve">
+    <value>Modificar Proveedor - MercaderSG</value>
+  </data>
+  <data name="TTAceptarModProv" xml:space="preserve">
+    <value>Modificar Proveedor</value>
+  </data>
+  <data name="CodProvTel" xml:space="preserve">
+    <value>C.Proveedor</value>
+  </data>
+  <data name="GestionProveedorGB" xml:space="preserve">
+    <value>Gestión de Proveedores</value>
+  </data>
+  <data name="AltaLocalidadFrm" xml:space="preserve">
+    <value>Nueva Localidad - MercaderSG</value>
+  </data>
+  <data name="CodPostalLbl" xml:space="preserve">
+    <value>Código Postal</value>
+  </data>
+  <data name="DescripcionLbl" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="ProvinciaLbl" xml:space="preserve">
+    <value>Provincia</value>
+  </data>
+  <data name="TTAceptarAltaLoc" xml:space="preserve">
+    <value>Nueva Localidad</value>
+  </data>
+  <data name="TTCodPostalLoc" xml:space="preserve">
+    <value>Código Postal de la localidad</value>
+  </data>
+  <data name="TTDescripcionLoc" xml:space="preserve">
+    <value>Nombre de la localidad</value>
+  </data>
+  <data name="TTProvinciaLoc" xml:space="preserve">
+    <value>Lista de Provincias</value>
+  </data>
+  <data name="RestoreGenerado" xml:space="preserve">
+    <value>La restauración de la base de datos se realizo correctamente</value>
+  </data>
+  <data name="NoAgregoBAK" xml:space="preserve">
+    <value>Debe seleccionar un archivo .ZIP de backup</value>
+  </data>
+  <data name="AgregarProdBtn" xml:space="preserve">
+    <value>Nuevo Producto</value>
+  </data>
+  <data name="EliminarProdBtn" xml:space="preserve">
+    <value>Eliminar Producto</value>
+  </data>
+  <data name="GestionProductosFrm" xml:space="preserve">
+    <value>Gestión de Productos - MercaderSG</value>
+  </data>
+  <data name="GestionProductosGB" xml:space="preserve">
+    <value>Gestión de Productos</value>
+  </data>
+  <data name="MasOpcionesBtn" xml:space="preserve">
+    <value>Más Opciones</value>
+  </data>
+  <data name="ModificarProdBtn" xml:space="preserve">
+    <value>Modificar Producto</value>
+  </data>
+  <data name="TTListaProducto" xml:space="preserve">
+    <value>Lista de Productos</value>
+  </data>
+  <data name="TTMasOpciones" xml:space="preserve">
+    <value>Más Opciones: Modificar Precio y Stock</value>
+  </data>
+  <data name="TTProductoAltaBtn" xml:space="preserve">
+    <value>Permite dar de alta un nuevo producto</value>
+  </data>
+  <data name="TTProductoEliminarBtn" xml:space="preserve">
+    <value>Permite dar de baja un producto</value>
+  </data>
+  <data name="TTProductoModificarBtn" xml:space="preserve">
+    <value>Permite modificar los datos de un producto</value>
+  </data>
+  <data name="AltaProductoFrm" xml:space="preserve">
+    <value>Nuevo Producto - MercaderSG</value>
+  </data>
+  <data name="TTAceptarAltaProd" xml:space="preserve">
+    <value>Nuevo Producto</value>
+  </data>
+  <data name="TTCantidadProd" xml:space="preserve">
+    <value>Cantidad actual del Producto</value>
+  </data>
+  <data name="TTDescrProd" xml:space="preserve">
+    <value>Descripción breve del producto</value>
+  </data>
+  <data name="TTNombreProd" xml:space="preserve">
+    <value>Nombre del Producto</value>
+  </data>
+  <data name="TTPrecioProd" xml:space="preserve">
+    <value>Valor actual del Producto
+Formato Ejemplo: 2.500
+Formato Ejemplo - Parte Decimal: 2.500,25</value>
+  </data>
+  <data name="TTSectorProd" xml:space="preserve">
+    <value>Sector al cual pertenece el Producto</value>
+  </data>
+  <data name="Contener15Carac" xml:space="preserve">
+    <value>Este campo no puede contener más de 15 caracteres</value>
+  </data>
+  <data name="CantidadMayor100" xml:space="preserve">
+    <value>La cantidad de productos no puede superar a 100 unidades. Esto lo puede modificar posteriormente</value>
+  </data>
+  <data name="Contener3Carac" xml:space="preserve">
+    <value>Este campo no puede contener más de tres caracteres</value>
+  </data>
+  <data name="Contener100Carac" xml:space="preserve">
+    <value>Este campo no puede contener más de cien caracteres</value>
+  </data>
+  <data name="TTAutoCompletar" xml:space="preserve">
+    <value>Auto completar la descripción</value>
+  </data>
+  <data name="FormatoPrecioCorrecto" xml:space="preserve">
+    <value>Formato Ejemplo: 2.500</value>
+  </data>
+  <data name="FormatoPrecioCorrectoDec" xml:space="preserve">
+    <value>Formato Ejemplo - Parte Decimal: 2.500,25</value>
+  </data>
+  <data name="PregPrecioCorrecto" xml:space="preserve">
+    <value>El precio ingresado esta en el formato adecuado?</value>
+  </data>
+  <data name="ModificarProductoFrm" xml:space="preserve">
+    <value>Modificar Producto - MercaderSG</value>
+  </data>
+  <data name="TTAceptarModificarProd" xml:space="preserve">
+    <value>Modificar Producto</value>
+  </data>
+  <data name="TTCodProd" xml:space="preserve">
+    <value>Código del producto</value>
+  </data>
+  <data name="CantActualLbl" xml:space="preserve">
+    <value>Cantidad Actual</value>
+  </data>
+  <data name="ModificarPrecioProductoFrm" xml:space="preserve">
+    <value>Modificar Precio - MercaderSG</value>
+  </data>
+  <data name="ModificarStockProductoFrm" xml:space="preserve">
+    <value>Modificar Stock - MercaderSG</value>
+  </data>
+  <data name="NuevoCantLbl" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="NuevoPrecioLbl" xml:space="preserve">
+    <value>Nuevo Precio</value>
+  </data>
+  <data name="PrecioActualLbl" xml:space="preserve">
+    <value>Precio Actual</value>
+  </data>
+  <data name="TTAceptarModificarPrecioProd" xml:space="preserve">
+    <value>Modificar Precio</value>
+  </data>
+  <data name="TTCantActual" xml:space="preserve">
+    <value>Cantidad actual del producto</value>
+  </data>
+  <data name="TTNuevaCant" xml:space="preserve">
+    <value>Cantidad que desea agregar a la existente</value>
+  </data>
+  <data name="TTNuevoPrecio" xml:space="preserve">
+    <value>Nuevo precio del producto
+Formato Ejemplo: 2.500
+Formato Ejemplo - Parte Decimal: 2.500,25</value>
+  </data>
+  <data name="TTPrecioActual" xml:space="preserve">
+    <value>Precio actual del producto</value>
+  </data>
+  <data name="EliminarVosMismo" xml:space="preserve">
+    <value>No se puede dar de baja a uno mismo</value>
+  </data>
+  <data name="ClienteExistente" xml:space="preserve">
+    <value>El cliente que desea dar de alta ya existe</value>
+  </data>
+  <data name="Completar3CamposCon" xml:space="preserve">
+    <value>Debe completar los tres campos para cambiar la contraseña</value>
+  </data>
+  <data name="CambiarContraseña" xml:space="preserve">
+    <value>Cambiar Contraseña</value>
+  </data>
+  <data name="CambiarContraseñaFrm" xml:space="preserve">
+    <value>Cambiar Contraseña - MercaderSG</value>
+  </data>
+  <data name="CaracteresEspecialesPass" xml:space="preserve">
+    <value>Caracteres especiales admitidos:</value>
+  </data>
+  <data name="ConAnteriorLbl" xml:space="preserve">
+    <value>Contraseña Anterior</value>
+  </data>
+  <data name="NuevaConLbl" xml:space="preserve">
+    <value>Nueva Contraseña</value>
+  </data>
+  <data name="ReNuevaConLbl" xml:space="preserve">
+    <value>Re-Ingresar Nueva Contraseña</value>
+  </data>
+  <data name="TTConAnterior" xml:space="preserve">
+    <value>Ingresar Contraseña anterior</value>
+  </data>
+  <data name="TTConfirmarCon" xml:space="preserve">
+    <value>Volver a ingresar la nueva Contraseña
+Caracteres Especiales Permitidos: ~!@#$%^&amp;*()_-+={}[]\|:;&lt;&gt;,.?/</value>
+  </data>
+  <data name="TTNuevaCon" xml:space="preserve">
+    <value>Ingresar Nueva Contraseña
+Caracteres Especiales Permitidos: ~!@#$%^&amp;*()_-+={}[]\|:;&lt;&gt;,.?/</value>
+  </data>
+  <data name="SeleccionarRuta" xml:space="preserve">
+    <value>Debe seleccionar una ruta para su archivo .BAK</value>
+  </data>
+  <data name="IngresarValor" xml:space="preserve">
+    <value>Este campo no debe estar vacio</value>
+  </data>
+  <data name="BackupFrm" xml:space="preserve">
+    <value>Copia de Seguridad - MercaderSG</value>
+  </data>
+  <data name="DestinoLbl" xml:space="preserve">
+    <value>Destino</value>
+  </data>
+  <data name="TTBuscarRutaBK" xml:space="preserve">
+    <value>Buscar ruta/destino del archivo .BAK</value>
+  </data>
+  <data name="TTGenerarBackup" xml:space="preserve">
+    <value>Generar copia de seguridad</value>
+  </data>
+  <data name="TTRuta" xml:space="preserve">
+    <value>Ruta en la cual se va a generar el archivo .BAK</value>
+  </data>
+  <data name="TTVolumenes" xml:space="preserve">
+    <value>Cantidad de partes en la que se va a dividir el archivo .BAK</value>
+  </data>
+  <data name="VolumenLbl" xml:space="preserve">
+    <value>Partes</value>
+  </data>
+  <data name="CompletoLbl" xml:space="preserve">
+    <value>Completo</value>
+  </data>
+  <data name="CriticidadLbl" xml:space="preserve">
+    <value>Criticidad</value>
+  </data>
+  <data name="FechaLbl" xml:space="preserve">
+    <value>Fecha</value>
+  </data>
+  <data name="BitacoraFrm" xml:space="preserve">
+    <value>Bitácora - MercaderSG</value>
+  </data>
+  <data name="CriticidadGB" xml:space="preserve">
+    <value>Buscar por criticidad</value>
+  </data>
+  <data name="FCompletoGB" xml:space="preserve">
+    <value>Filtro Completo</value>
+  </data>
+  <data name="FechaDesdeLbl" xml:space="preserve">
+    <value>Desde</value>
+  </data>
+  <data name="FechaDesdeMenor" xml:space="preserve">
+    <value>Debe ingresar una fecha anterior a la fecha hasta</value>
+  </data>
+  <data name="FechaHastaLbl" xml:space="preserve">
+    <value>Hasta</value>
+  </data>
+  <data name="FechasGB" xml:space="preserve">
+    <value>Buscar en un rango de fechas</value>
+  </data>
+  <data name="FiltroLbl" xml:space="preserve">
+    <value>Filtro</value>
+  </data>
+  <data name="TTBuscarCompleto" xml:space="preserve">
+    <value>Buscar eventos aplicando filtro completo</value>
+  </data>
+  <data name="TTBuscarCriticidad" xml:space="preserve">
+    <value>Buscar eventos por nivel de criticidad</value>
+  </data>
+  <data name="TTBuscarFechas" xml:space="preserve">
+    <value>Buscar eventos en un rango de fechas</value>
+  </data>
+  <data name="TTBuscarUsuarios" xml:space="preserve">
+    <value>Buscar eventos por usuario</value>
+  </data>
+  <data name="TTFiltroBitacora" xml:space="preserve">
+    <value>Aplicar filtros personalizados para la búsqueda</value>
+  </data>
+  <data name="TTListaBitacora" xml:space="preserve">
+    <value>Lista de Eventos</value>
+  </data>
+  <data name="UnicoValorCriticidad" xml:space="preserve">
+    <value>El valor de la criticidad debe ser de un caracter de longitud</value>
+  </data>
+  <data name="UsuarioGBBit" xml:space="preserve">
+    <value>Buscar por usuario</value>
+  </data>
+  <data name="PregDV" xml:space="preserve">
+    <value>¿Desea recalcular los dígitos verificadores?</value>
+  </data>
+  <data name="PreguntaTituDV" xml:space="preserve">
+    <value>Recalcular Dígitos Verificadores</value>
+  </data>
+  <data name="RecalcularPfrm" xml:space="preserve">
+    <value>Recalcular DV</value>
+  </data>
+  <data name="NoExisteNPBusqueda" xml:space="preserve">
+    <value>No existen nota de pedido para su búsqueda</value>
+  </data>
+  <data name="ModificarPrecioBtn" xml:space="preserve">
+    <value>Modificar Precio</value>
+  </data>
+  <data name="ModificarStockBtn" xml:space="preserve">
+    <value>Modificar Stock</value>
+  </data>
+  <data name="PatenteFamiliaFrm" xml:space="preserve">
+    <value>Patente - Familia | MercaderSG</value>
+  </data>
+  <data name="DestinoRestoreLbl" xml:space="preserve">
+    <value>Seleccionar Archivo/s</value>
+  </data>
+  <data name="FamiliaLbl" xml:space="preserve">
+    <value>Familia</value>
+  </data>
+  <data name="FamiliasGB" xml:space="preserve">
+    <value>Lista de Familias</value>
+  </data>
+  <data name="NoTienePermisoAltaPatFam" xml:space="preserve">
+    <value>Usted no tiene permisos para dar de alta una patente a una familia</value>
+  </data>
+  <data name="NoTienePermisoAltaPatFam2" xml:space="preserve">
+    <value>De igual manera se procederá a realizar la eliminación de la/s patente/s seleccionadas ya que usted posee dicho permiso</value>
+  </data>
+  <data name="NoTienePermisoBajaPatFam" xml:space="preserve">
+    <value>Usted no tiene permisos para eliminar una patente de una familia</value>
+  </data>
+  <data name="NoTienePermisoBajaPatFam2" xml:space="preserve">
+    <value>De igual manera se procederá a realizar el alta de la/s patente/s seleccionadas ya que usted posee dicho permiso.</value>
+  </data>
+  <data name="PatentesFamLbl" xml:space="preserve">
+    <value>Patentes que posee la familia (Baja)</value>
+  </data>
+  <data name="PatentesNoFamLbl" xml:space="preserve">
+    <value>Patentes que no posee la familia (Alta)</value>
+  </data>
+  <data name="RestoreFrm" xml:space="preserve">
+    <value>Restaurar base de datos - MercaderSG</value>
+  </data>
+  <data name="RestoreGB" xml:space="preserve">
+    <value>Restaurar</value>
+  </data>
+  <data name="ResultadoOperacion" xml:space="preserve">
+    <value>Resultado de la Operación</value>
+  </data>
+  <data name="TTAltaBajaPatFam" xml:space="preserve">
+    <value>Alta - Baja de patentes para una familia</value>
+  </data>
+  <data name="TTArchivosBAKR" xml:space="preserve">
+    <value>Lista de archivos .BAK</value>
+  </data>
+  <data name="TTBuscarBAK" xml:space="preserve">
+    <value>Buscar archivo/s .BAK</value>
+  </data>
+  <data name="TTBuscarFam" xml:space="preserve">
+    <value>Cargar patentes para la familia seleccionada</value>
+  </data>
+  <data name="TTFamiliaCMB" xml:space="preserve">
+    <value>Lista de familias disponibles</value>
+  </data>
+  <data name="TTGenerarRestore" xml:space="preserve">
+    <value>Generar restauración</value>
+  </data>
+  <data name="TTPatentesFam" xml:space="preserve">
+    <value>Lista de patentes que posee la familia</value>
+  </data>
+  <data name="TTPatentesNoFam" xml:space="preserve">
+    <value>Lista de patentes que no posee la familia</value>
+  </data>
+  <data name="TTResultadoOp" xml:space="preserve">
+    <value>Clic para ver los resultados</value>
+  </data>
+  <data name="UsuarioFamiliaFrm" xml:space="preserve">
+    <value>Usuario - Familia | MercaderSG</value>
+  </data>
+  <data name="TTAltaUsuFam" xml:space="preserve">
+    <value>Asignar usuario a familia</value>
+  </data>
+  <data name="TTlistaFamilias" xml:space="preserve">
+    <value>Lista de Familias</value>
+  </data>
+  <data name="TTListaUsuarios" xml:space="preserve">
+    <value>Lista de Usuarios</value>
+  </data>
+  <data name="NoTienePermisoAltaPatUsu" xml:space="preserve">
+    <value>Usted no tiene permisos para dar de alta una patente a un usuario</value>
+  </data>
+  <data name="NoTienePermisoAltaPatUsu2" xml:space="preserve">
+    <value>De igual manera se procederá a denegar la/s patente/s seleccionadas ya que usted posee dicho permiso</value>
+  </data>
+  <data name="NoTienePermisoBajaPatUsu" xml:space="preserve">
+    <value>Usted no tiene permisos para denegar una patente a un usuario</value>
+  </data>
+  <data name="NoTienePermisoBajaPatUsu2" xml:space="preserve">
+    <value>De igual manera se procederá a realizar el alta de la/s patente/s seleccionadas ya que usted posee dicho permiso</value>
+  </data>
+  <data name="PatentesNoUsuLbl" xml:space="preserve">
+    <value>Patentes que posee el usuario (Denegar)</value>
+  </data>
+  <data name="PatentesUsuLbl" xml:space="preserve">
+    <value>Patentes que no posee el usuario (Asignar)</value>
+  </data>
+  <data name="TTAltaBajaPatUsu" xml:space="preserve">
+    <value>Asignar - Denegar patentes a un usuario</value>
+  </data>
+  <data name="TTBuscarUsuariosPat" xml:space="preserve">
+    <value>Buscar patentes del usuario</value>
+  </data>
+  <data name="TTPatentesNoUsu" xml:space="preserve">
+    <value>Lista de patentes que posee el usuario</value>
+  </data>
+  <data name="TTPatentesUsu" xml:space="preserve">
+    <value>Lista de patentes que no posee el usuario</value>
+  </data>
+  <data name="UsuarioPatenteFrm" xml:space="preserve">
+    <value>Patente - Usuario | MercaderSG</value>
+  </data>
+  <data name="NoPermisosAltaPatente" xml:space="preserve">
+    <value>Usted no tiene permisos para dar de alta una o más patentes a un usuario</value>
+  </data>
+  <data name="NoPermisosBajaPatente" xml:space="preserve">
+    <value>Usted no tiene permisos para denegar una o más patentes a un usuario</value>
+  </data>
+  <data name="NoPermisosAltaPatenteFamilia" xml:space="preserve">
+    <value>Usted no tiene permisos para dar de alta una o más patentes a una familia</value>
+  </data>
+  <data name="NoPermisosBajaPatenteFamilia" xml:space="preserve">
+    <value>Usted no tiene permisos para eliminar una o más patentes a una familia</value>
+  </data>
+  <data name="FamiliasGBTiene" xml:space="preserve">
+    <value>Lista de familias que poseen patentes</value>
+  </data>
+  <data name="AltaFamBtn" xml:space="preserve">
+    <value>Nueva Familia</value>
+  </data>
+  <data name="AltaFamiliaFrm" xml:space="preserve">
+    <value>Nueva Familia - MercaderSG</value>
+  </data>
+  <data name="EliminarFamBtn" xml:space="preserve">
+    <value>Eliminar Familia</value>
+  </data>
+  <data name="GestionFamiliaFrm" xml:space="preserve">
+    <value>Gestión de Familias - MercaderSG</value>
+  </data>
+  <data name="ModificarFamBtn" xml:space="preserve">
+    <value>Modificar Familia</value>
+  </data>
+  <data name="ModificarFamFrm" xml:space="preserve">
+    <value>Modificar Familia - MercaderSG</value>
+  </data>
+  <data name="TTAgregarFam" xml:space="preserve">
+    <value>Agregar nueva familia</value>
+  </data>
+  <data name="TTAltafam" xml:space="preserve">
+    <value>Nueva Familia</value>
+  </data>
+  <data name="TTDescripcionFam" xml:space="preserve">
+    <value>Nombre de la familia</value>
+  </data>
+  <data name="TTDescripcionModFam" xml:space="preserve">
+    <value>Nuevo nombre de la familia</value>
+  </data>
+  <data name="TTEliminarFam" xml:space="preserve">
+    <value>Eliminar una familia</value>
+  </data>
+  <data name="TTModificarFam" xml:space="preserve">
+    <value>Modificar el nombre de una familia</value>
+  </data>
+  <data name="AgregarUsuBtn" xml:space="preserve">
+    <value>Nuevo Usuario</value>
+  </data>
+  <data name="DebeGernerarContraseña" xml:space="preserve">
+    <value>Debe generar la contraseña</value>
+  </data>
+  <data name="EliminarUsuBtn" xml:space="preserve">
+    <value>Eliminar Usuario</value>
+  </data>
+  <data name="GestionUsuariosGB" xml:space="preserve">
+    <value>Gestión de Usuarios</value>
+  </data>
+  <data name="ModificarUsuBtn" xml:space="preserve">
+    <value>Modificar Usuario</value>
+  </data>
+  <data name="TTUsuarioAltaBtn" xml:space="preserve">
+    <value>Permite crear un nuevo usuario</value>
+  </data>
+  <data name="TTUsuarioEliminarBtn" xml:space="preserve">
+    <value>Permite dar de baja un usuario</value>
+  </data>
+  <data name="TTUsuarioModificarBtn" xml:space="preserve">
+    <value>Permite modificar los datos de un usuario</value>
+  </data>
+  <data name="CaracteresEspecialesUsuario" xml:space="preserve">
+    <value>Caracteres especiales para el usuario: </value>
+  </data>
+  <data name="DatosPersonales" xml:space="preserve">
+    <value>Datos Personales</value>
+  </data>
+  <data name="FechaNacimientoLbl" xml:space="preserve">
+    <value>Fecha de Nacimiento</value>
+  </data>
+  <data name="FormatoCorreo" xml:space="preserve">
+    <value>El formato del correo electronico es incorrecto</value>
+  </data>
+  <data name="NombreUsuarioLbl" xml:space="preserve">
+    <value>Nombre de Usuario</value>
+  </data>
+  <data name="TTAceptarAltaUsu" xml:space="preserve">
+    <value>Nuevo Usuario</value>
+  </data>
+  <data name="TTApellidoUsu" xml:space="preserve">
+    <value>Apellido del usuario</value>
+  </data>
+  <data name="TTCorreoElectronicoUsu" xml:space="preserve">
+    <value>Correo electronico para contacto</value>
+  </data>
+  <data name="TTNacimientoUsu" xml:space="preserve">
+    <value>Fecha de nacimiento del usuario</value>
+  </data>
+  <data name="TTNombreUsu" xml:space="preserve">
+    <value>Nombre del Usuario</value>
+  </data>
+  <data name="TTTelelonoUsu" xml:space="preserve">
+    <value>Número Teléfonico del usuario</value>
+  </data>
+  <data name="TTUsuarioText" xml:space="preserve">
+    <value>Nombre de usuario para ingresar al sistema
+Caracteres Especiales Permitidos: _-.</value>
+  </data>
+  <data name="DesbloquearUsuarioFrm" xml:space="preserve">
+    <value>Desbloquear Usuario - MercaderSG</value>
+  </data>
+  <data name="ResetearContraseñaFrm" xml:space="preserve">
+    <value>Resetear Contraseña - MercaderSG</value>
+  </data>
+  <data name="SeleccionarUsuarioGB" xml:space="preserve">
+    <value>Seleccionar Usuario</value>
+  </data>
+  <data name="TTAceptarDesbloquearUsu" xml:space="preserve">
+    <value>Desbloquear usuario</value>
+  </data>
+  <data name="TTAceptarResetearContraseña" xml:space="preserve">
+    <value>Resetear Contraseña</value>
+  </data>
+  <data name="TTIdiomas" xml:space="preserve">
+    <value>Idiomas disponibles de la aplicación</value>
+  </data>
+  <data name="TTListaUsuBloqueados" xml:space="preserve">
+    <value>Lista de usuarios bloqueados</value>
+  </data>
+  <data name="TTModificarUsuBtn" xml:space="preserve">
+    <value>Modificar datos del usuario</value>
+  </data>
+  <data name="CodUsuTel" xml:space="preserve">
+    <value>C.Usuario</value>
+  </data>
+  <data name="BuscarProductoFrm" xml:space="preserve">
+    <value>Buscar Producto - MercaderSG</value>
+  </data>
+  <data name="IngresarProdBuscar" xml:space="preserve">
+    <value>Ingresar producto a buscar</value>
+  </data>
+  <data name="SeleccionarProd" xml:space="preserve">
+    <value>Seleccionar Producto</value>
+  </data>
+  <data name="TTBuscarProd" xml:space="preserve">
+    <value>Buscar producto aplicando un filtro</value>
+  </data>
+  <data name="BuscarClienteFrm" xml:space="preserve">
+    <value>Buscar Cliente - MercaderSG</value>
+  </data>
+  <data name="BuscarProveedorFrm" xml:space="preserve">
+    <value>Buscar Proveedor - MercaderSG</value>
+  </data>
+  <data name="SeleccionarCli" xml:space="preserve">
+    <value>Seleccionar Cliente</value>
+  </data>
+  <data name="SeleccionarProv" xml:space="preserve">
+    <value>Seleccionar Proveedor</value>
+  </data>
+  <data name="TTBuscarCli" xml:space="preserve">
+    <value>Buscar Cliente aplicando un filtro</value>
+  </data>
+  <data name="TTBuscarCliTxt" xml:space="preserve">
+    <value>Ingresar cliente a buscar</value>
+  </data>
+  <data name="TTBuscarProv" xml:space="preserve">
+    <value>Buscar Proveedor aplicando un filtro</value>
+  </data>
+  <data name="TTBuscarProvTxt" xml:space="preserve">
+    <value>Ingresar proveedor a buscar</value>
+  </data>
+  <data name="ActivoLbl" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="AgregarGral" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
+  <data name="AltaNotaVentaFrm" xml:space="preserve">
+    <value>Generar Nota de Venta - MercaderSG</value>
+  </data>
+  <data name="DatosClienteGB" xml:space="preserve">
+    <value>Datos del Cliente</value>
+  </data>
+  <data name="DatosProductoGB" xml:space="preserve">
+    <value>Datos del Producto</value>
+  </data>
+  <data name="DetalleNotaVenta" xml:space="preserve">
+    <value>Detalle de la Nota de Venta</value>
+  </data>
+  <data name="EliminarGral" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="FechaEmiForm" xml:space="preserve">
+    <value>Fecha de Emisión</value>
+  </data>
+  <data name="NuevoGral" xml:space="preserve">
+    <value>Nuevo</value>
+  </data>
+  <data name="TotalLbl" xml:space="preserve">
+    <value>TOTAL</value>
+  </data>
+  <data name="TTAgregarDetalle" xml:space="preserve">
+    <value>Agregar línea al detalle</value>
+  </data>
+  <data name="TTBuscarCliNotas" xml:space="preserve">
+    <value>Buscar Cliente</value>
+  </data>
+  <data name="TTBuscarProdNota" xml:space="preserve">
+    <value>Buscar Producto</value>
+  </data>
+  <data name="TTCodCli" xml:space="preserve">
+    <value>Código del Cliente</value>
+  </data>
+  <data name="TTDireccionCli" xml:space="preserve">
+    <value>Dirección actual del cliente</value>
+  </data>
+  <data name="TTEliminarDetalle" xml:space="preserve">
+    <value>Eliminar línea al detalle</value>
+  </data>
+  <data name="TTFechaEmisionNota" xml:space="preserve">
+    <value>Fecha de Emisión de la Nota de Venta</value>
+  </data>
+  <data name="TTGenerarNotaVenta" xml:space="preserve">
+    <value>Generar nota de venta</value>
+  </data>
+  <data name="TTIngreseCantidad" xml:space="preserve">
+    <value>Ingresar cantidad del producto</value>
+  </data>
+  <data name="TTNuevoDetalle" xml:space="preserve">
+    <value>Generar nuevo detalle</value>
+  </data>
+  <data name="AgregarCliNV" xml:space="preserve">
+    <value>Debe seleccionar un cliente</value>
+  </data>
+  <data name="IngresarCantidad" xml:space="preserve">
+    <value>Debe ingresar una cantidad</value>
+  </data>
+  <data name="AgregarProvNV" xml:space="preserve">
+    <value>Debe seleccionar un Proveedor</value>
+  </data>
+  <data name="AltaNotaPedidoFrm" xml:space="preserve">
+    <value>Generar Nota de Pedido - MercaderSG</value>
+  </data>
+  <data name="DatosProveedorGB" xml:space="preserve">
+    <value>Datos del Proveedor</value>
+  </data>
+  <data name="TTBuscarProvNotas" xml:space="preserve">
+    <value>Buscar Proveedor</value>
+  </data>
+  <data name="TTCodProv" xml:space="preserve">
+    <value>Código del Proveedor</value>
+  </data>
+  <data name="TTDireccionProv" xml:space="preserve">
+    <value>Dirección actual del Proveedor</value>
+  </data>
+  <data name="TTFechaEmisionNP" xml:space="preserve">
+    <value>Fecha de Emisión de la Nota de Pedido</value>
+  </data>
+  <data name="TTGenerarNotaPedido" xml:space="preserve">
+    <value>Generar Nota de Pedido</value>
+  </data>
+  <data name="AccionLbl" xml:space="preserve">
+    <value>Acción</value>
+  </data>
+  <data name="BajaNotaPed" xml:space="preserve">
+    <value>Baja Nota de Pedido</value>
+  </data>
+  <data name="ConsultaRemitoFrm" xml:space="preserve">
+    <value>Remito de Nota de Venta - MercaderSG</value>
+  </data>
+  <data name="ConsultarNP" xml:space="preserve">
+    <value>Consultar Nota de Pedido</value>
+  </data>
+  <data name="ConsultarNPFrm" xml:space="preserve">
+    <value>Nota de Pedido - MercaderSG</value>
+  </data>
+  <data name="GestionNPFrm" xml:space="preserve">
+    <value>Gestión de Nota de Pedidos - MercaderSG</value>
+  </data>
+  <data name="GestionNVFrm" xml:space="preserve">
+    <value>Gestión de Notas de Venta - MercaderSG</value>
+  </data>
+  <data name="NotaPedidoGB" xml:space="preserve">
+    <value>Notas de Pedido</value>
+  </data>
+  <data name="NotaVentaFrm" xml:space="preserve">
+    <value>Nota de Venta - MercaderSG</value>
+  </data>
+  <data name="NotaVentaGB" xml:space="preserve">
+    <value>Notas de Venta</value>
+  </data>
+  <data name="NroNotaCAB" xml:space="preserve">
+    <value>Nro_Nota</value>
+  </data>
+  <data name="NumeroNota" xml:space="preserve">
+    <value>Número de Nota</value>
+  </data>
+  <data name="TTBuscarNotaPedido" xml:space="preserve">
+    <value>Buscar Nota de Pedido</value>
+  </data>
+  <data name="TTBuscarNotaVenta" xml:space="preserve">
+    <value>Buscar Nota de Venta</value>
+  </data>
+  <data name="TTListaAcciones" xml:space="preserve">
+    <value>Lista de Acciones a Realizar</value>
+  </data>
+  <data name="TTListaNotaPedido" xml:space="preserve">
+    <value>Lista de Notas de Pedidos</value>
+  </data>
+  <data name="TTListaNotaVenta" xml:space="preserve">
+    <value>Lista de Notas de Venta</value>
+  </data>
+  <data name="TTNroNotaPedido" xml:space="preserve">
+    <value>Ingresar Nota de Pedido a Buscar</value>
+  </data>
+  <data name="TTNroNotaVenta" xml:space="preserve">
+    <value>Ingresar Nota de Venta a Buscar</value>
+  </data>
+  <data name="TTRealizarAccion" xml:space="preserve">
+    <value>Realizar Acción</value>
+  </data>
+  <data name="UltimaNotaPedidoFrm" xml:space="preserve">
+    <value>Última Nota de Pedido - MercaderSG</value>
+  </data>
+  <data name="UltimaNotaVentaFrm" xml:space="preserve">
+    <value>Útima Nota de Venta - MercaderSG</value>
+  </data>
+  <data name="BajaNotaVenta" xml:space="preserve">
+    <value>Baja Nota de Venta</value>
+  </data>
+  <data name="ConsultarNV" xml:space="preserve">
+    <value>Consultar Nota de Venta</value>
+  </data>
+  <data name="ConsultarRemNV" xml:space="preserve">
+    <value>Consultar Remito de Nota de Venta</value>
+  </data>
+  <data name="GenerarRemito" xml:space="preserve">
+    <value>Generar Remito</value>
+  </data>
+  <data name="CausaFam" xml:space="preserve">
+    <value>CAUSA: U.F.C.C.P</value>
+  </data>
+  <data name="CausaUsu" xml:space="preserve">
+    <value>CAUSA: U.U.D.C.P.A</value>
+  </data>
+  <data name="InformeErrores" xml:space="preserve">
+    <value>Resultados de la operación - MercaderSG</value>
+  </data>
+  <data name="PatentesNoDenegadasUsu" xml:space="preserve">
+    <value>Patentes no denegadas: </value>
+  </data>
+  <data name="PatentesNoEliminadasFam" xml:space="preserve">
+    <value>Patentes no eliminadas: </value>
+  </data>
+  <data name="SDFArchivoTexto" xml:space="preserve">
+    <value>Archivo de Texto (*.txt)|*.txt</value>
+  </data>
+  <data name="ACDescProd" xml:space="preserve">
+    <value>Producto del sector </value>
+  </data>
+  <data name="DebeSeleccionarCliente" xml:space="preserve">
+    <value>Debe Seleccionar un Cliente para realizar la acción</value>
+  </data>
+  <data name="NoClientes" xml:space="preserve">
+    <value>No hay clientes cargados en la grilla</value>
+  </data>
+  <data name="DebeSeleccionarProducto" xml:space="preserve">
+    <value>Debe seleccionar un Producto para realizar la acción</value>
+  </data>
+  <data name="NoProductos" xml:space="preserve">
+    <value>No hay productos cargados en la grilla</value>
+  </data>
+  <data name="ProductoExistente" xml:space="preserve">
+    <value>El producto que desea dar de alta ya existe</value>
+  </data>
+  <data name="DebeSeleccionarProveedor" xml:space="preserve">
+    <value>Debe seleccionar un proveedor para realizar la acción</value>
+  </data>
+  <data name="ModificarProducto" xml:space="preserve">
+    <value>¿Desea modificar los datos del producto: </value>
+  </data>
+  <data name="MsgBoxModificarProducto" xml:space="preserve">
+    <value>Modificar Producto</value>
+  </data>
+  <data name="NoProveedor" xml:space="preserve">
+    <value>No hay proveedores cargados en la grilla</value>
+  </data>
+  <data name="UsuarioDadoBaja" xml:space="preserve">
+    <value>El usuario esta dado de baja</value>
+  </data>
+  <data name="ArchivoBack" xml:space="preserve">
+    <value>Archivo ZIP | *.zip</value>
+  </data>
+  <data name="SelBackup" xml:space="preserve">
+    <value>Seleccionar .ZIP de Backup</value>
+  </data>
+  <data name="DebeSeleccionarFamilia" xml:space="preserve">
+    <value>Debe seleccionar una familia para realizar la acción</value>
+  </data>
+  <data name="FamiliaExistente" xml:space="preserve">
+    <value>La familia que desea dar de alta ya existe</value>
+  </data>
+  <data name="ModificarFamiliaTitu" xml:space="preserve">
+    <value>Modificar Familia</value>
+  </data>
+  <data name="NoFamilias" xml:space="preserve">
+    <value>No hay familias cargados en la grilla</value>
+  </data>
+  <data name="PatentesDenegadasUsu" xml:space="preserve">
+    <value>Patentes denegadas que posee el Usuario</value>
+  </data>
+  <data name="TTPatDenegadasUsu" xml:space="preserve">
+    <value>Lista de patentes denegadas que posee el usuario</value>
+  </data>
+  <data name="ErrorIntegridad" xml:space="preserve">
+    <value>Error de integridad en la base de datos. Se notifico al usuario correspondiente</value>
+  </data>
+  <data name="ErrorIntegridadConUsuario" xml:space="preserve">
+    <value>Este usuario esta afectado a un error de integridad (Permisos). Se notifico a la persona correspondiente</value>
+  </data>
+  <data name="DepurarBitacora" xml:space="preserve">
+    <value>Depurar Bitácora</value>
+  </data>
+  <data name="DebeSeleccionarCriticidad" xml:space="preserve">
+    <value>Debe seleccionar un nivel de criticidad</value>
+  </data>
+  <data name="DebeSeleccionarUsuario" xml:space="preserve">
+    <value>Debe seleccionar un usuario</value>
+  </data>
+  <data name="NoUsuarios" xml:space="preserve">
+    <value>No hay usuarios cargados en la grilla</value>
+  </data>
+  <data name="ModificarVosMismo" xml:space="preserve">
+    <value>No se puede modificar los datos de uno mismo</value>
+  </data>
+  <data name="TTListaProductoNP" xml:space="preserve">
+    <value>Lista de Productos a Pedir</value>
+  </data>
+  <data name="TTListaProductoNV" xml:space="preserve">
+    <value>Lista de Productos a Vender</value>
+  </data>
+  <data name="ValorCUIT" xml:space="preserve">
+    <value>El formato del CUIT es correcto pero el último valor ingresado es incorrecto</value>
+  </data>
+  <data name="CantidadGB" xml:space="preserve">
+    <value>Stock Producto</value>
+  </data>
+  <data name="MasUnaPat" xml:space="preserve">
+    <value>Para dicha familia debe seleccionar más de una patente</value>
+  </data>
+  <data name="NombreProductoExistente" xml:space="preserve">
+    <value>El nombre del producto ya existe. Vuelva a ingresar otro</value>
+  </data>
+  <data name="VerificoIntegridad" xml:space="preserve">
+    <value>Los dígitos verificadores se verificaron correctamente</value>
+  </data>
+  <data name="DeshabiltarForms" xml:space="preserve">
+    <value>Se deshabilitaron los siguientes formularios </value>
+  </data>
+  <data name="ErrorIntegridadSistema" xml:space="preserve">
+    <value>Causa: Error de integridad</value>
+  </data>
+  <data name="SistemaBloqueadoCompleto" xml:space="preserve">
+    <value>El sistema se ha bloqueado por completo.</value>
+  </data>
+  <data name="SistemaBloqueadoCompleto2" xml:space="preserve">
+    <value>Causa: Error relacionado con los permisos de los usuarios</value>
+  </data>
+  <data name="CritiAlta" xml:space="preserve">
+    <value>1 - Alto</value>
+  </data>
+  <data name="CritiBaja" xml:space="preserve">
+    <value>3 - Bajo</value>
+  </data>
+  <data name="CritiMedia" xml:space="preserve">
+    <value>2 - Medio</value>
+  </data>
+  <data name="DebeSeleccionarNP" xml:space="preserve">
+    <value>Debe seleccionar una nota de pedido para realizar la acción</value>
+  </data>
+  <data name="DebeSeleccionarNV" xml:space="preserve">
+    <value>Debe seleccionar una nota de venta para realizar la acción</value>
+  </data>
+  <data name="NoNotasPedido" xml:space="preserve">
+    <value>No hay notas de pedido cargadas en la grilla</value>
+  </data>
+  <data name="NoNotasVentas" xml:space="preserve">
+    <value>No hay notas de venta cargadas en la grilla</value>
+  </data>
+  <data name="DebeAgregarLocalidad" xml:space="preserve">
+    <value>Debe agregar o seleccionar una localidad</value>
+  </data>
+  <data name="MismoUsuarioAltaPatentes" xml:space="preserve">
+    <value>Usted no se puede asignar patentes a si mismo</value>
+  </data>
+  <data name="HayErrorIntegridad" xml:space="preserve">
+    <value>Hay error de integridad, se deben recalcular los dígitos verificadores</value>
+  </data>
+  <data name="ImprimirNotaPedido" xml:space="preserve">
+    <value>¿Desea imprimir la Nota de Pedido</value>
+  </data>
+  <data name="ContraseñaZip" xml:space="preserve">
+    <value>Contraseña ZIP</value>
+  </data>
+  <data name="NombreZip" xml:space="preserve">
+    <value>Nombre del ZIP</value>
+  </data>
+  <data name="ReContraseñaZip" xml:space="preserve">
+    <value>Re-Ingresar Contraseña</value>
+  </data>
+  <data name="TTContraseñaZip" xml:space="preserve">
+    <value>Contraseña para extraer el archivo BAK. De 8 a 12 caracteres</value>
+  </data>
+  <data name="TTNombreZip" xml:space="preserve">
+    <value>Nombre del archivo ZIP. Hasta 12 caracteres</value>
+  </data>
+  <data name="TTReContraseñaZip" xml:space="preserve">
+    <value>Ingresar la misma contraseña que en el campo anterior.</value>
+  </data>
+  <data name="NuevoRestoreLimpiar" xml:space="preserve">
+    <value>Limpiar datos para ingresar nuevos datos</value>
+  </data>
+  <data name="MismoUsuarioAltaFamilia" xml:space="preserve">
+    <value>Usted no se puede asignar una familia a si mismo</value>
+  </data>
+  <data name="NoEventos" xml:space="preserve">
+    <value>No hay eventos almacenados para buscar</value>
+  </data>
+  <data name="BDNoExiste" xml:space="preserve">
+    <value>La base de datos no existe</value>
+  </data>
+  <data name="ClienteDadoBaja" xml:space="preserve">
+    <value>El cliente esta dado de baja</value>
+  </data>
+  <data name="Contener9Carac" xml:space="preserve">
+    <value>Este campo no puede contener más de 9 caracteres</value>
+  </data>
+  <data name="UsuarioRevision" xml:space="preserve">
+    <value>El usuario no puede ser bloqueado. CAUSA: U.U.C.C.P</value>
+  </data>
+</root>

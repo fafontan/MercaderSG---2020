@@ -1,0 +1,895 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{984E0FAB-A278-4A7F-8913-7CFA967A22F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MercaderSG.SubMain</StartupObject>
+    <RootNamespace>MercaderSG</RootNamespace>
+    <AssemblyName>MercaderSG</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MercaderSG.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MercaderSG.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ApiIconos.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\..\..\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Access, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Comercial\NotaPedido\ConsultarNP.Designer.vb">
+      <DependentUpon>ConsultarNP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\NotaPedido\ConsultarNP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comercial\NotaPedido\GestionNP.Designer.vb">
+      <DependentUpon>GestionNP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\NotaPedido\GestionNP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comercial\NotaPedido\NotaPedidoRP.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NotaPedidoRP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Comercial\NotaPedido\UltimaNPRepor.Designer.vb">
+      <DependentUpon>UltimaNPRepor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\NotaPedido\UltimaNPRepor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comercial\NotaVenta\ConsultarNV.Designer.vb">
+      <DependentUpon>ConsultarNV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\NotaVenta\ConsultarNV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comercial\NotaVenta\GestionNV.Designer.vb">
+      <DependentUpon>GestionNV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\NotaVenta\GestionNV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comercial\NotaVenta\NotaVentaRP.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NotaVentaRP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Comercial\NotaVenta\Remito\ConsultarRemito.Designer.vb">
+      <DependentUpon>ConsultarRemito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\NotaVenta\Remito\ConsultarRemito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comercial\NotaVenta\Remito\RemitoRP.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RemitoRP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Comercial\NotaVenta\UltimaNVRepor.Designer.vb">
+      <DependentUpon>UltimaNVRepor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\NotaVenta\UltimaNVRepor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlUsuario\FiltroCompleto.Designer.vb">
+      <DependentUpon>FiltroCompleto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlUsuario\FiltroCompleto.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlUsuario\FiltroCriticidad.Designer.vb">
+      <DependentUpon>FiltroCriticidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlUsuario\FiltroCriticidad.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlUsuario\FiltroFecha.Designer.vb">
+      <DependentUpon>FiltroFecha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlUsuario\FiltroFecha.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlUsuario\FiltroUsuario.Designer.vb">
+      <DependentUpon>FiltroUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlUsuario\FiltroUsuario.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ArchivoIdioma.es-AR.Designer.vb">
+      <DependentUpon>ArchivoIdioma.es-AR.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ArchivoIdioma.en-US.Designer.vb">
+      <DependentUpon>ArchivoIdioma.en-US.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="GeneralDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GeneralDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralDS.vb">
+      <DependentUpon>GeneralDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Gestión\AltaLocalidad.Designer.vb">
+      <DependentUpon>AltaLocalidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestión\AltaLocalidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ArchivoIdioma.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ArchivoIdioma.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Gestión\GestionProducto\AltaProducto.Designer.vb">
+      <DependentUpon>AltaProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestión\GestionProducto\AltaProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestión\GestionProducto\GestionProducto.Designer.vb">
+      <DependentUpon>GestionProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestión\GestionProducto\GestionProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestión\GestionProducto\ModificarPrecio.Designer.vb">
+      <DependentUpon>ModificarPrecio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestión\GestionProducto\ModificarPrecio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestión\GestionProducto\ModificarProducto.Designer.vb">
+      <DependentUpon>ModificarProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestión\GestionProducto\ModificarProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestión\GestionProducto\ModificarStock.Designer.vb">
+      <DependentUpon>ModificarStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestión\GestionProducto\ModificarStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestión\GestionProveedores\AltaProveedor.Designer.vb">
+      <DependentUpon>AltaProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestión\GestionProveedores\AltaProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestión\GestionProveedores\EliminarTelProveedor.Designer.vb">
+      <DependentUpon>EliminarTelProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestión\GestionProveedores\EliminarTelProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestión\GestionProveedores\GestionProveedor.Designer.vb">
+      <DependentUpon>GestionProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestión\GestionProveedores\GestionProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestión\GestionProveedores\ModificarProveedor.Designer.vb">
+      <DependentUpon>ModificarProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestión\GestionProveedores\ModificarProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\CambiarContrasena.Designer.vb">
+      <DependentUpon>CambiarContrasena.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\CambiarContrasena.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comercial\BuscarProducto.Designer.vb">
+      <DependentUpon>BuscarProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\BuscarProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comercial\NotaPedido\BuscarProveedor.Designer.vb">
+      <DependentUpon>BuscarProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\NotaPedido\BuscarProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comercial\NotaPedido\NotaPedido.Designer.vb">
+      <DependentUpon>NotaPedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\NotaPedido\NotaPedido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comercial\NotaVenta\BuscarCliente.Designer.vb">
+      <DependentUpon>BuscarCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\NotaVenta\BuscarCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comercial\NotaVenta\NotaVenta.Designer.vb">
+      <DependentUpon>NotaVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Comercial\NotaVenta\NotaVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\PantallaError\ResultadoFamPatUsu.Designer.vb">
+      <DependentUpon>ResultadoFamPatUsu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\PantallaError\ResultadoFamPatUsu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\DesbloquearUsuario.Designer.vb">
+      <DependentUpon>DesbloquearUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\DesbloquearUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extension.vb" />
+    <Compile Include="BarraProgreso.Designer.vb">
+      <DependentUpon>BarraProgreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BarraProgreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\GestionFamilia\AltaFamilia.Designer.vb">
+      <DependentUpon>AltaFamilia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\GestionFamilia\AltaFamilia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\GestionFamilia\GestionFamilia.Designer.vb">
+      <DependentUpon>GestionFamilia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\GestionFamilia\GestionFamilia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\GestionFamilia\ModificarFamilia.Designer.vb">
+      <DependentUpon>ModificarFamilia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\GestionFamilia\ModificarFamilia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\Backup.Designer.vb">
+      <DependentUpon>Backup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\Backup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestión\GestionClientes\AltaCliente.Designer.vb">
+      <DependentUpon>AltaCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestión\GestionClientes\AltaCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestión\GestionClientes\EliminarTelCliente.Designer.vb">
+      <DependentUpon>EliminarTelCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestión\GestionClientes\EliminarTelCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestión\GestionClientes\GestionCliente.Designer.vb">
+      <DependentUpon>GestionCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestión\GestionClientes\GestionCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestión\GestionClientes\ModificarCliente.Designer.vb">
+      <DependentUpon>ModificarCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gestión\GestionClientes\ModificarCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\GestionUsuarios\AltaUsuario.Designer.vb">
+      <DependentUpon>AltaUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\GestionUsuarios\AltaUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\GestionUsuarios\EliminarTelUsuario.Designer.vb">
+      <DependentUpon>EliminarTelUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\GestionUsuarios\EliminarTelUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\GestionUsuarios\GestionUsuario.Designer.vb">
+      <DependentUpon>GestionUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\GestionUsuarios\GestionUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\GestionUsuarios\ModificarUsuario.Designer.vb">
+      <DependentUpon>ModificarUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\GestionUsuarios\ModificarUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.vb">
+      <DependentUpon>LogIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Principal.Designer.vb">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\Bitacora.Designer.vb">
+      <DependentUpon>Bitacora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\Bitacora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\FamiliaPatente.Designer.vb">
+      <DependentUpon>FamiliaPatente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\FamiliaPatente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\UsuarioFamilia.Designer.vb">
+      <DependentUpon>UsuarioFamilia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\UsuarioFamilia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\Restore.Designer.vb">
+      <DependentUpon>Restore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\Restore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\UsuarioPatente.Designer.vb">
+      <DependentUpon>UsuarioPatente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\UsuarioPatente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sistema\ResetearContrasena.Designer.vb">
+      <DependentUpon>ResetearContrasena.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sistema\ResetearContrasena.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubMain.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Comercial\NotaPedido\ConsultarNP.resx">
+      <DependentUpon>ConsultarNP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comercial\NotaPedido\GestionNP.resx">
+      <DependentUpon>GestionNP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comercial\NotaPedido\NotaPedidoRP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>NotaPedidoRP.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comercial\NotaPedido\UltimaNPRepor.resx">
+      <DependentUpon>UltimaNPRepor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comercial\NotaVenta\ConsultarNV.resx">
+      <DependentUpon>ConsultarNV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comercial\NotaVenta\GestionNV.resx">
+      <DependentUpon>GestionNV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comercial\NotaVenta\NotaVentaRP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>NotaVentaRP.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comercial\NotaVenta\Remito\ConsultarRemito.resx">
+      <DependentUpon>ConsultarRemito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comercial\NotaVenta\Remito\RemitoRP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RemitoRP.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comercial\NotaVenta\UltimaNVRepor.resx">
+      <DependentUpon>UltimaNVRepor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlUsuario\FiltroCompleto.resx">
+      <DependentUpon>FiltroCompleto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlUsuario\FiltroCriticidad.resx">
+      <DependentUpon>FiltroCriticidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlUsuario\FiltroFecha.resx">
+      <DependentUpon>FiltroFecha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlUsuario\FiltroUsuario.resx">
+      <DependentUpon>FiltroUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArchivoIdioma.es-AR.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ArchivoIdioma.es-AR.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArchivoIdioma.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ArchivoIdioma.en-US.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestión\AltaLocalidad.resx">
+      <DependentUpon>AltaLocalidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ArchivoIdioma.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ArchivoIdioma.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarraProgreso.resx">
+      <DependentUpon>BarraProgreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestión\GestionProducto\AltaProducto.resx">
+      <DependentUpon>AltaProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestión\GestionProducto\GestionProducto.resx">
+      <DependentUpon>GestionProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestión\GestionProducto\ModificarPrecio.resx">
+      <DependentUpon>ModificarPrecio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestión\GestionProducto\ModificarProducto.resx">
+      <DependentUpon>ModificarProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestión\GestionProducto\ModificarStock.resx">
+      <DependentUpon>ModificarStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestión\GestionProveedores\AltaProveedor.resx">
+      <DependentUpon>AltaProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestión\GestionProveedores\EliminarTelProveedor.resx">
+      <DependentUpon>EliminarTelProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestión\GestionProveedores\GestionProveedor.resx">
+      <DependentUpon>GestionProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestión\GestionProveedores\ModificarProveedor.resx">
+      <DependentUpon>ModificarProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel\CambiarContrasena.resx">
+      <DependentUpon>CambiarContrasena.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comercial\BuscarProducto.resx">
+      <DependentUpon>BuscarProducto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comercial\NotaPedido\BuscarProveedor.resx">
+      <DependentUpon>BuscarProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comercial\NotaPedido\NotaPedido.resx">
+      <DependentUpon>NotaPedido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comercial\NotaVenta\BuscarCliente.resx">
+      <DependentUpon>BuscarCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comercial\NotaVenta\NotaVenta.resx">
+      <DependentUpon>NotaVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\PantallaError\ResultadoFamPatUsu.resx">
+      <DependentUpon>ResultadoFamPatUsu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\DesbloquearUsuario.resx">
+      <DependentUpon>DesbloquearUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\GestionFamilia\AltaFamilia.resx">
+      <DependentUpon>AltaFamilia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\GestionFamilia\GestionFamilia.resx">
+      <DependentUpon>GestionFamilia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\GestionFamilia\ModificarFamilia.resx">
+      <DependentUpon>ModificarFamilia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\Backup.resx">
+      <DependentUpon>Backup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestión\GestionClientes\AltaCliente.resx">
+      <DependentUpon>AltaCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestión\GestionClientes\EliminarTelCliente.resx">
+      <DependentUpon>EliminarTelCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestión\GestionClientes\GestionCliente.resx">
+      <DependentUpon>GestionCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestión\GestionClientes\ModificarCliente.resx">
+      <DependentUpon>ModificarCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\GestionUsuarios\AltaUsuario.resx">
+      <DependentUpon>AltaUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\GestionUsuarios\EliminarTelUsuario.resx">
+      <DependentUpon>EliminarTelUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\GestionUsuarios\GestionUsuario.resx">
+      <DependentUpon>GestionUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\GestionUsuarios\ModificarUsuario.resx">
+      <DependentUpon>ModificarUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\Bitacora.resx">
+      <DependentUpon>Bitacora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\FamiliaPatente.resx">
+      <DependentUpon>FamiliaPatente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\UsuarioFamilia.resx">
+      <DependentUpon>UsuarioFamilia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\Restore.resx">
+      <DependentUpon>Restore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\UsuarioPatente.resx">
+      <DependentUpon>UsuarioPatente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sistema\ResetearContrasena.resx">
+      <DependentUpon>ResetearContrasena.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GeneralDS.xsc">
+      <DependentUpon>GeneralDS.xsd</DependentUpon>
+    </None>
+    <None Include="GeneralDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GeneralDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="GeneralDS.xss">
+      <DependentUpon>GeneralDS.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.vbproj">
+      <Project>{E976D1F1-674D-4C57-B7C5-24063874DCF7}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Excepciones\Excepciones.vbproj">
+      <Project>{0A2A1FBF-9E79-4EBC-A0B0-DB346B051BBC}</Project>
+      <Name>Excepciones</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocios\Negocios.vbproj">
+      <Project>{492E6843-8471-4EA6-B190-5D92807BFA23}</Project>
+      <Name>Negocios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Servicios\Servicios.vbproj">
+      <Project>{9513194D-B041-4B9A-B53B-C06D7FE8310F}</Project>
+      <Name>Servicios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\ExcelE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogInE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClienteE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProveedorE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CambiarPassE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SalirE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RestoreE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IdiomaE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BitacoraE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Permisos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UltimoE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SiguienteE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AnteriorE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrimeroE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RecargarE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StockE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrecioE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MasOpcionesE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InformationE32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AdvertenciaE32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InfoDocE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BuscarE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DesbloquearG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DesbloImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FamiliaE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NotaE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GestionNV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoPatentes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoPatentes1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RestoreE1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newPage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CancelBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\us.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ResetearPass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database_save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resetear48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calcular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApiIconos.ico" />
+    <Content Include="IcoApi.ico" />
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
