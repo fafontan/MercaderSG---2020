@@ -14,7 +14,8 @@ namespace NegociosC
             Familia.Descripcion = Seguridad.Encriptar(Familia.Descripcion);
             if (FamiliaAD.ValidarFamilia(Familia.Descripcion) > 0)
             {
-                throw new WarningException(NegociosC.My.Resources.ArchivoIdioma.FamiliaExistente);
+                throw new WarningException(My.Resources.ArchivoIdioma.FamiliaExistente);
+                //throw new WarningException(NegociosC.My.Resources.ArchivoIdioma.FamiliaExistente);
                 return;
             }
             else
@@ -36,7 +37,8 @@ namespace NegociosC
                 DVVDatosBitacora.ValorDVH = DVHBitacora;
                 DVVDatosBitacora.TipoAccion = "Alta";
                 Integridad.GrabarDVV(DVVDatosBitacora);
-                throw new InformationException(Negocios.My.Resources.ArchivoIdioma.AltaFamilia);
+                throw new InformationException(My.Resources.ArchivoIdioma.AltaFamilia);
+                //throw new InformationException(Negocios.My.Resources.ArchivoIdioma.AltaFamilia);
             }
         }
 
@@ -148,11 +150,13 @@ namespace NegociosC
                 DVVDatosBitacora.ValorDVH = DVHBitacora;
                 DVVDatosBitacora.TipoAccion = "Alta";
                 Integridad.GrabarDVV(DVVDatosBitacora);
-                throw new InformationException(Negocios.My.Resources.ArchivoIdioma.BajaFamilia);
+                throw new InformationException(My.Resources.ArchivoIdioma.BajaFamilia);
+                //throw new InformationException(Negocios.My.Resources.ArchivoIdioma.BajaFamilia);
             }
             else
             {
-                throw new WarningException(Negocios.My.Resources.ArchivoIdioma.PrivilegiosFamilia);
+                throw new WarningException(My.Resources.ArchivoIdioma.PrivilegiosFamilia);
+                //throw new WarningException(Negocios.My.Resources.ArchivoIdioma.PrivilegiosFamilia);
                 return;
             }
         }
@@ -223,7 +227,8 @@ namespace NegociosC
             DVVDatosBitacora.ValorDVH = DVHBitacora;
             DVVDatosBitacora.TipoAccion = "Alta";
             Integridad.GrabarDVV(DVVDatosBitacora);
-            throw new InformationException(Negocios.My.Resources.ArchivoIdioma.ModificarFamilia);
+            throw new InformationException(My.Resources.ArchivoIdioma.ModificarFamilia);
+            //throw new InformationException(Negocios.My.Resources.ArchivoIdioma.ModificarFamilia);
         }
 
         public static FamiliaEN ObtenerFamilia(string Descripcion)

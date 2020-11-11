@@ -3,7 +3,7 @@ using DatosC;
 using EntidadesC;
 using ExcepcionesC;
 using Microsoft.VisualBasic.CompilerServices;
-using Servicios;
+using ServiciosC;
 
 namespace Negocios
 {
@@ -21,7 +21,8 @@ namespace Negocios
             }
             else
             {
-                throw new WarningException(Negocios.My.Resources.ArchivoIdioma.RemitoNoExiste);
+                throw new WarningException(My.Resources.ArchivoIdioma.RemitoNoExiste);
+                //throw new WarningException(Negocios.My.Resources.ArchivoIdioma.RemitoNoExiste);
             }
         }
 
@@ -31,7 +32,8 @@ namespace Negocios
             var RENV = new NVRemitoEN();
             if (NVRemitoAD.ValidarRemitoNV(CodigoNota) > 0)
             {
-                throw new WarningException(Negocios.My.Resources.ArchivoIdioma.RemitoNVExiste);
+                throw new WarningException(My.Resources.ArchivoIdioma.RemitoNVExiste);
+                //throw new WarningException(Negocios.My.Resources.ArchivoIdioma.RemitoNVExiste);
             }
             else
             {
@@ -54,7 +56,8 @@ namespace Negocios
             DVVDatosBitacora.ValorDVH = DVHBitacora;
             DVVDatosBitacora.TipoAccion = "Alta";
             Integridad.GrabarDVV(DVVDatosBitacora);
-            throw new InformationException(Negocios.My.Resources.ArchivoIdioma.RemitoNVGenerado);
+            throw new InformationException(My.Resources.ArchivoIdioma.RemitoNVGenerado);
+            //throw new InformationException(Negocios.My.Resources.ArchivoIdioma.RemitoNVGenerado);
         }
     }
 }

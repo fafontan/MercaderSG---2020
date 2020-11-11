@@ -14,7 +14,8 @@ namespace NegociosC
             Cliente.Cuit = Seguridad.Encriptar(Cliente.Cuit);
             if (ClienteAD.ValidarCliente(Cliente.Cuit) > 0)
             {
-                throw new WarningException(Negocios.My.Resources.ArchivoIdioma.ClienteExistente);
+                throw new WarningException(My.Resources.ArchivoIdioma.ClienteExistente);
+                //throw new WarningException(Negocios.My.Resources.ArchivoIdioma.ClienteExistente);
                 return;
             }
             else
@@ -55,7 +56,8 @@ namespace NegociosC
                 DVVDatosBitacora.ValorDVH = DVHBitacora;
                 DVVDatosBitacora.TipoAccion = "Alta";
                 Integridad.GrabarDVV(DVVDatosBitacora);
-                throw new InformationException(Negocios.My.Resources.ArchivoIdioma.AltaCliente);
+                throw new InformationException(My.Resources.ArchivoIdioma.AltaCliente);
+                //throw new InformationException(Negocios.My.Resources.ArchivoIdioma.AltaCliente);
             }
         }
 
@@ -89,14 +91,16 @@ namespace NegociosC
             DVVDatosBitacora.ValorDVH = DVHBitacora;
             DVVDatosBitacora.TipoAccion = "Alta";
             Integridad.GrabarDVV(DVVDatosBitacora);
-            throw new InformationException(Negocios.My.Resources.ArchivoIdioma.BajaCliente);
+            throw new InformationException(My.Resources.ArchivoIdioma.BajaCliente);
+            //throw new InformationException(Negocios.My.Resources.ArchivoIdioma.BajaCliente);
         }
 
         public static List<ClienteEN> BuscarCliente(string campo, string valor)
         {
             var ListaCliente = new List<ClienteEN>();
             var ListaCliProcesada = new List<ClienteEN>();
-            if ((campo ?? "") == (Negocios.My.Resources.ArchivoIdioma.CMBCuit ?? ""))
+            if ((campo ?? "") == (My.Resources.ArchivoIdioma.CMBCuit ?? ""))
+                //if ((campo ?? "") == (Negocios.My.Resources.ArchivoIdioma.CMBCuit ?? ""))
             {
                 valor = Seguridad.Encriptar(valor);
             }
@@ -156,7 +160,8 @@ namespace NegociosC
             DVVDatosBitacora.ValorDVH = DVHBitacora;
             DVVDatosBitacora.TipoAccion = "Alta";
             Integridad.GrabarDVV(DVVDatosBitacora);
-            throw new InformationException(Negocios.My.Resources.ArchivoIdioma.EliminarTelefono);
+           // throw new InformationException(Negocios.My.Resources.ArchivoIdioma.EliminarTelefono);
+            throw new InformationException(My.Resources.ArchivoIdioma.EliminarTelefono);
         }
 
         /// <param name="Cliente"></param>
@@ -201,7 +206,8 @@ namespace NegociosC
             DVVDatosBitacora.ValorDVH = DVHBitacora;
             DVVDatosBitacora.TipoAccion = "Alta";
             Integridad.GrabarDVV(DVVDatosBitacora);
-            throw new InformationException(Negocios.My.Resources.ArchivoIdioma.ModificarCliente);
+            throw new InformationException(My.Resources.ArchivoIdioma.ModificarCliente);
+            //throw new InformationException(Negocios.My.Resources.ArchivoIdioma.ModificarCliente);
         }
 
         public static ClienteEN ObtenerCliente(string CUIT)

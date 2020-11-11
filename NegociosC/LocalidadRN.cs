@@ -2,7 +2,7 @@
 using DatosC;
 using EntidadesC;
 using ExcepcionesC;
-using Servicios;
+using ServiciosC;
 
 namespace NegociosC
 {
@@ -12,7 +12,8 @@ namespace NegociosC
         {
             if (LocalidadAD.ValidarLocalidad(Localidad.Descripcion) > 0)
             {
-                throw new WarningException(Negocios.My.Resources.ArchivoIdioma.LocalidadExistente);
+                throw new WarningException(My.Resources.ArchivoIdioma.LocalidadExistente);
+                //throw new WarningException(Negocios.My.Resources.ArchivoIdioma.LocalidadExistente);
                 return;
             }
             else
@@ -34,7 +35,8 @@ namespace NegociosC
                 DVVDatosBitacora.TipoAccion = "Alta";
                 Integridad.GrabarDVV(DVVDatosBitacora);
                 LocalidadAD.AltaLocalidad(Localidad);
-                throw new InformationException(Negocios.My.Resources.ArchivoIdioma.AltaLocalidad);
+                throw new InformationException(My.Resources.ArchivoIdioma.AltaLocalidad);
+                //throw new InformationException(Negocios.My.Resources.ArchivoIdioma.AltaLocalidad);
             }
         }
 

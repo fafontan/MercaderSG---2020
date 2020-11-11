@@ -4,7 +4,7 @@ using DatosC;
 using EntidadesC;
 using ExcepcionesC;
 using Microsoft.VisualBasic.CompilerServices;
-using Servicios;
+using ServiciosC;
 
 namespace NegociosC
 {
@@ -54,7 +54,8 @@ namespace NegociosC
             DVVDatosBitacora.ValorDVH = DVHBitacora;
             DVVDatosBitacora.TipoAccion = "Alta";
             Integridad.GrabarDVV(DVVDatosBitacora);
-            throw new InformationException(Negocios.My.Resources.ArchivoIdioma.BajaNotaVenta);
+            throw new InformationException(My.Resources.ArchivoIdioma.BajaNotaVenta);
+            //throw new InformationException(Negocios.My.Resources.ArchivoIdioma.BajaNotaVenta);
         }
 
         public static List<NotaVentaEN> CargarNotaVenta()
@@ -82,7 +83,8 @@ namespace NegociosC
             }
             else
             {
-                throw new WarningException(Negocios.My.Resources.ArchivoIdioma.NotaVentaNoExiste);
+                throw new WarningException(My.Resources.ArchivoIdioma.NotaVentaNoExiste);
+                //throw new WarningException(Negocios.My.Resources.ArchivoIdioma.NotaVentaNoExiste);
             }
         }
 
@@ -144,7 +146,8 @@ namespace NegociosC
             DVVDatosBitacora.ValorDVH = DVHBitacora;
             DVVDatosBitacora.TipoAccion = "Alta";
             Integridad.GrabarDVV(DVVDatosBitacora);
-            throw new InformationException(Negocios.My.Resources.ArchivoIdioma.AltaNotaVenta);
+            throw new InformationException(My.Resources.ArchivoIdioma.AltaNotaVenta);
+            //throw new InformationException(Negocios.My.Resources.ArchivoIdioma.AltaNotaVenta);
         }
     }
 } // NotaVentaRN

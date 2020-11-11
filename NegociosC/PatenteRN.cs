@@ -93,7 +93,8 @@ namespace NegociosC
             }
             else
             {
-                throw new WarningException(Negocios.My.Resources.ArchivoIdioma.FamiliaInexistente);
+                throw new WarningException(My.Resources.ArchivoIdioma.FamiliaInexistente);
+                //throw new WarningException(Negocios.My.Resources.ArchivoIdioma.FamiliaInexistente);
             }
 
             return ListaPatenteProcesada;
@@ -119,7 +120,8 @@ namespace NegociosC
             }
             else
             {
-                throw new WarningException(Negocios.My.Resources.ArchivoIdioma.FamiliaInexistente);
+                throw new WarningException(My.Resources.ArchivoIdioma.FamiliaInexistente);
+                //throw new WarningException(Negocios.My.Resources.ArchivoIdioma.FamiliaInexistente);
             }
 
             return ListaPatenteProcesada;
@@ -144,7 +146,8 @@ namespace NegociosC
             }
             else
             {
-                throw new WarningException(Negocios.My.Resources.ArchivoIdioma.UsuarioDadoBaja);
+                throw new WarningException(My.Resources.ArchivoIdioma.UsuarioDadoBaja);
+                //throw new WarningException(Negocios.My.Resources.ArchivoIdioma.UsuarioDadoBaja);
             }
 
             return ListaPatenteProcesada;

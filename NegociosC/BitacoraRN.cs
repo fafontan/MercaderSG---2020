@@ -1,6 +1,7 @@
 ﻿using DatosC;
 using EntidadesC;
 using ServiciosC;
+using ExcepcionesC;
 using System;
 using System.Collections.Generic;
 
@@ -179,7 +180,8 @@ namespace NegociosC
             DVVDatosBitacora.ValorDVH = DVHBitacora;
             DVVDatosBitacora.TipoAccion = "Alta";
             Integridad.GrabarDVV(DVVDatosBitacora);
-            throw new InformationException(Negocios.My.Resources.ArchivoIdioma.DepurarBitacora);
+            throw new InformationException(My.Resources.ArchivoIdioma.DepurarBitacora);
+            //throw new InformationException(Negocios.My.Resources.ArchivoIdioma.DepurarBitacora);
         }
     }
 } // BitacoraRN

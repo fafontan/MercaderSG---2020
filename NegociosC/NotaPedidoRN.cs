@@ -4,7 +4,7 @@ using DatosC;
 using EntidadesC;
 using ExcepcionesC;
 using Microsoft.VisualBasic.CompilerServices;
-using Servicios;
+using ServiciosC;
 
 namespace NegociosC
 {
@@ -32,7 +32,8 @@ namespace NegociosC
             DVVDatosBitacora.ValorDVH = DVHBitacora;
             DVVDatosBitacora.TipoAccion = "Alta";
             Integridad.GrabarDVV(DVVDatosBitacora);
-            throw new InformationException(NegociosC.My.Resources.ArchivoIdioma.BajaNotaVenta);
+            throw new InformationException(My.Resources.ArchivoIdioma.BajaNotaVenta);
+            //throw new InformationException(NegociosC.My.Resources.ArchivoIdioma.BajaNotaVenta);
         }
 
         public static List<NotaPedidoEN> CargarNotaPedido()
@@ -54,7 +55,8 @@ namespace NegociosC
             }
             else
             {
-                throw new WarningException(Negocios.My.Resources.ArchivoIdioma.NotaPedidoNoExiste);
+                throw new WarningException(My.Resources.ArchivoIdioma.NotaPedidoNoExiste);
+                //throw new WarningException(Negocios.My.Resources.ArchivoIdioma.NotaPedidoNoExiste);
             }
         }
 
@@ -101,7 +103,8 @@ namespace NegociosC
             DVVDatosBitacora.ValorDVH = DVHBitacora;
             DVVDatosBitacora.TipoAccion = "Alta";
             Integridad.GrabarDVV(DVVDatosBitacora);
-            throw new InformationException(Negocios.My.Resources.ArchivoIdioma.AltaNotaPedido);
+            throw new InformationException(My.Resources.ArchivoIdioma.AltaNotaPedido);
+            //throw new InformationException(Negocios.My.Resources.ArchivoIdioma.AltaNotaPedido);
         }
 
         public static List<NotaPedidoEN> BuscarNotaPedido(string NroNota)
