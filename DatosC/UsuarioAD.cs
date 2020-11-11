@@ -130,7 +130,8 @@ namespace DatosC
                 int Resultado = Conversions.ToInteger(CmdExiste.ExecuteScalar());
                 if (Resultado == 0)
                 {
-                    throw new WarningException(Datos.My.Resources.ArchivoIdioma.UsuarioDadoBaja);
+                    throw new WarningException(My.Resources.ArchivoIdioma.UsuarioDadoBaja);
+                    //throw new WarningException(DatosC.My.Resources.ArchivoIdioma.UsuarioDadoBaja);
                 }
                 else
                 {
@@ -165,19 +166,22 @@ namespace DatosC
                 Cmd.Connection = Cnn;
                 switch (campo ?? "")
                 {
-                    case var @case when @case == (DatosC.My.Resources.ArchivoIdioma.CMBUsuario ?? ""):
+                    case var @case when @case == (My.Resources.ArchivoIdioma.CMBUsuario ?? ""):
+                    //case var @case when @case == (DatosC.My.Resources.ArchivoIdioma.CMBUsuario ?? ""):
                         {
                             Cmd.CommandText = "SELECT CodUsu,Usuario,Apellido,Nombre,CorreoElectronico,CAST(DATEDIFF(dd,CONVERT(VARCHAR(20),FechaNacimiento),CONVERT(date,GETDATE())) / 365.25 AS INT) " + "FROM Usuario WHERE Usuario=@Param1 AND Activo=1";
                             break;
                         }
 
-                    case var case1 when case1 == (DatosC.My.Resources.ArchivoIdioma.CMBApellido ?? ""):
+                    //case var case1 when case1 == (DatosC.My.Resources.ArchivoIdioma.CMBApellido ?? ""):
+                    case var case1 when case1 == (My.Resources.ArchivoIdioma.CMBApellido ?? ""):
                         {
                             Cmd.CommandText = "SELECT CodUsu,Usuario,Apellido,Nombre,CorreoElectronico,CAST(DATEDIFF(dd,CONVERT(VARCHAR(20),FechaNacimiento),CONVERT(date,GETDATE())) / 365.25 AS INT) " + "FROM Usuario WHERE Apellido LIKE '%' + @Param1 + '%' AND Activo=1";
                             break;
                         }
 
-                    case var case2 when case2 == (DatosC.My.Resources.ArchivoIdioma.CMBNombre ?? ""):
+                   // case var case2 when case2 == (DatosC.My.Resources.ArchivoIdioma.CMBNombre ?? ""):
+                    case var case2 when case2 == (My.Resources.ArchivoIdioma.CMBNombre ?? ""):
                         {
                             Cmd.CommandText = "SELECT CodUsu,Usuario,Apellido,Nombre,CorreoElectronico,CAST(DATEDIFF(dd,CONVERT(VARCHAR(20),FechaNacimiento),CONVERT(date,GETDATE())) / 365.25 AS INT) " + "FROM Usuario WHERE Nombre LIKE '%' + @Param1 + '%' AND Activo=1";
                             break;
@@ -214,7 +218,8 @@ namespace DatosC
                 int Resultado = Conversions.ToInteger(CmdExiste.ExecuteScalar());
                 if (Resultado == 0)
                 {
-                    throw new WarningException(DatosC.My.Resources.ArchivoIdioma.UsuarioDadoBaja);
+                    throw new WarningException(My.Resources.ArchivoIdioma.UsuarioDadoBaja);
+                   // throw new WarningException(DatosC.My.Resources.ArchivoIdioma.UsuarioDadoBaja);
                 }
                 else
                 {
@@ -294,7 +299,8 @@ namespace DatosC
                 int Resultado = Conversions.ToInteger(CmdExiste.ExecuteScalar());
                 if (Resultado == 0)
                 {
-                    throw new WarningException(Datos.My.Resources.ArchivoIdioma.UsuarioDadoBaja);
+                    throw new WarningException(My.Resources.ArchivoIdioma.UsuarioDadoBaja);
+                    //throw new WarningException(Datos.My.Resources.ArchivoIdioma.UsuarioDadoBaja);
                 }
                 else
                 {
@@ -311,7 +317,8 @@ namespace DatosC
                     }
                     else
                     {
-                        throw new WarningException(Datos.My.Resources.ArchivoIdioma.UsuarioNoBloqueado);
+                        throw new WarningException(My.Resources.ArchivoIdioma.UsuarioNoBloqueado);
+                       // throw new WarningException(Datos.My.Resources.ArchivoIdioma.UsuarioNoBloqueado);
                     }
                 }
             }
@@ -337,7 +344,8 @@ namespace DatosC
                 }
                 else
                 {
-                    throw new WarningException(DatosC.My.Resources.ArchivoIdioma.NumeroTelefonoNoExiste);
+                    throw new WarningException(My.Resources.ArchivoIdioma.NumeroTelefonoNoExiste);
+                    //throw new WarningException(DatosC.My.Resources.ArchivoIdioma.NumeroTelefonoNoExiste);
                 }
             }
         }
@@ -386,7 +394,8 @@ namespace DatosC
                 int Resultado = Conversions.ToInteger(CmdExiste.ExecuteScalar());
                 if (Resultado == 0)
                 {
-                    throw new WarningException(Datos.My.Resources.ArchivoIdioma.UsuarioDadoBaja);
+                    throw new WarningException(My.Resources.ArchivoIdioma.UsuarioDadoBaja);
+                    //throw new WarningException(Datos.My.Resources.ArchivoIdioma.UsuarioDadoBaja);
                 }
                 else
                 {
@@ -404,7 +413,8 @@ namespace DatosC
                     Cmd.Parameters.AddWithValue("@Param6", Usuario.FechaNacimiento);
                     Cmd.ExecuteNonQuery();
                     foreach (TelefonoEN Telefono in Usuario.Telefono)
-                        Datos.NegocioAD.ModificarTelefono(CodigoUsuario, Telefono, "Tel_Usu");
+                        DatosC.NegocioAD.ModificarTelefono(CodigoUsuario, Telefono, "Tel_Usu");
+                        //Datos.NegocioAD.ModificarTelefono(CodigoUsuario, Telefono, "Tel_Usu");
                 }
             }
         }
@@ -431,7 +441,8 @@ namespace DatosC
                         int ResultadoBloqueado = Conversions.ToInteger(CmdBloqueado.ExecuteScalar());
                         if (ResultadoBloqueado > 0)
                         {
-                            throw new CriticalException(Datos.My.Resources.ArchivoIdioma.UsuarioBloqueado);
+                            throw new CriticalException(My.Resources.ArchivoIdioma.UsuarioBloqueado);
+                           // throw new CriticalException(Datos.My.Resources.ArchivoIdioma.UsuarioBloqueado);
                         }
                         else
                         {
@@ -444,12 +455,14 @@ namespace DatosC
                     }
                     else
                     {
-                        throw new CriticalException(Datos.My.Resources.ArchivoIdioma.UsuarioNoExiste);
+                        throw new CriticalException(My.Resources.ArchivoIdioma.UsuarioNoExiste);
+                        //throw new CriticalException(Datos.My.Resources.ArchivoIdioma.UsuarioNoExiste);
                     }
                 }
                 else
                 {
-                    throw new CriticalException(Datos.My.Resources.ArchivoIdioma.NoExistenUsuariosBD);
+                    throw new CriticalException(My.Resources.ArchivoIdioma.NoExistenUsuariosBD);
+                    //throw new CriticalException(Datos.My.Resources.ArchivoIdioma.NoExistenUsuariosBD);
                 }
             }
         }
@@ -465,7 +478,8 @@ namespace DatosC
                 int Resultado = Conversions.ToInteger(CmdExiste.ExecuteScalar());
                 if (Resultado == 0)
                 {
-                    throw new WarningException(Datos.My.Resources.ArchivoIdioma.UsuarioDadoBaja);
+                    throw new WarningException(My.Resources.ArchivoIdioma.UsuarioDadoBaja);
+                    //throw new WarningException(Datos.My.Resources.ArchivoIdioma.UsuarioDadoBaja);
                 }
                 else
                 {
@@ -490,7 +504,8 @@ namespace DatosC
                 int Resultado = Conversions.ToInteger(CmdExiste.ExecuteScalar());
                 if (Resultado == 0)
                 {
-                    throw new WarningException(Datos.My.Resources.ArchivoIdioma.UsuarioDadoBaja);
+                    throw new WarningException(My.Resources.ArchivoIdioma.UsuarioDadoBaja);
+                    //throw new WarningException(Datos.My.Resources.ArchivoIdioma.UsuarioDadoBaja);
                 }
                 else
                 {
@@ -524,7 +539,8 @@ namespace DatosC
                 int Resultado = Conversions.ToInteger(CmdExiste.ExecuteScalar());
                 if (Resultado == 0)
                 {
-                    throw new WarningException(Datos.My.Resources.ArchivoIdioma.UsuarioDadoBaja);
+                    throw new WarningException(My.Resources.ArchivoIdioma.UsuarioDadoBaja);
+                   // throw new WarningException(Datos.My.Resources.ArchivoIdioma.UsuarioDadoBaja);
                 }
                 else
                 {
@@ -613,7 +629,8 @@ namespace DatosC
                 int Resultado = Conversions.ToInteger(CmdExiste.ExecuteScalar());
                 if (Resultado > 0)
                 {
-                    throw new WarningException(Datos.My.Resources.ArchivoIdioma.UsuarioDadoBaja);
+                    throw new WarningException(My.Resources.ArchivoIdioma.UsuarioDadoBaja);
+                    //throw new WarningException(Datos.My.Resources.ArchivoIdioma.UsuarioDadoBaja);
                 }
                 else
                 {
